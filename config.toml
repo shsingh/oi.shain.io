@@ -1,0 +1,114 @@
+baseURL = "https://oi.shain.io"
+title   = "<meta name=\"Shain Singh\">"
+DefaultContentLanguage = "en"
+
+theme = "hello-friend-ng"
+
+pygmentsCodefences = true
+pygmentsUseClasses = true
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+staticDir    = "static"
+
+buildDrafts  = true
+buildFuture  = true
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = true
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/thoughts/:title/"
+
+[author]
+  name = "Shain Singh"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = ""
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "A group of electrons in the form of Shain Singh formed to write..."
+  keywords = "homepage, blog, science, development, programming, networking, cloud, automation, orchestration, software"
+  images = [""]
+
+  homeSubtitle = "bit shifter, packet wrangler, polymath in training, loud mouth"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  gitUrl = "https://github.com/shsingh/oi.shain.io/commit/"
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = true # Set "text-align: justify" to .content.
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "thoughts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  [params.logo]
+    logoText     = "shsingh@opinionated:~blog$ "
+    logoHomeLink = "/"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/shainsingh"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:shain.singh@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/shsingh"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/shsingh"
+
+[languages]
+  [languages.en]
+    subtitle  = ""
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+  [[menu.main]]
+    identifier = "thoughts"
+    name       = "Thoughts"
+    url        = "thoughts/"
