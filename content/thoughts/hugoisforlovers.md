@@ -1,7 +1,7 @@
 +++
 title = "Getting Started with Hugo"
 description = ""
-type = ["posts","post"]
+type = ["thoughts"]
 tags = [
     "go",
     "golang",
