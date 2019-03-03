@@ -4,12 +4,12 @@
   
   <url>
     <loc>https://oi.shain.io/thoughts/creating-a-new-theme/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://oi.shain.io/thoughts/migrate-from-jekyll/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <loc>https://oi.shain.io/thoughts/migrate-to-hugo-from-jekyll/</loc>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
   </url>
   
   <url>
@@ -18,13 +18,13 @@
   </url>
   
   <url>
-    <loc>https://oi.shain.io/thoughts/goisforlovers/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <loc>https://oi.shain.io/thoughts/hugo-template-primer/</loc>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://oi.shain.io/thoughts/hugoisforlovers/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <loc>https://oi.shain.io/thoughts/getting-started-with-hugo/</loc>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
   </url>
   
   <url>
@@ -34,55 +34,55 @@
   
   <url>
     <loc>https://oi.shain.io/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://oi.shain.io/tags/development/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://oi.shain.io/tags/go/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://oi.shain.io/tags/golang/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://oi.shain.io/tags/hugo/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://oi.shain.io/posts/</loc>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://oi.shain.io/tags/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://oi.shain.io/tags/templates/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://oi.shain.io/tags/themes/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://oi.shain.io/thoughts/</loc>
-    <lastmod>2019-03-03T20:08:14+11:00</lastmod>
+    <lastmod>2019-03-03T20:14:09+11:00</lastmod>
     <priority>0</priority>
   </url>
   

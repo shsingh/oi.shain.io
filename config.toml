@@ -111,4 +111,4 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     identifier = "thoughts"
     name       = "Thoughts"
-    url        = "thoughts/"
+    url        = "posts/"
