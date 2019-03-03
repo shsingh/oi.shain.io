@@ -1,5 +1,5 @@
 baseURL = "https://oi.shain.io"
-title   = "{{ id: Shain Singh }}"
+title   = "{{ name: Shain Singh }}"
 DefaultContentLanguage = "en"
 
 theme = "hello-friend-ng"
