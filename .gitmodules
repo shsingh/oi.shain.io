@@ -5,8 +5,5 @@
 	path = themes/lanyon-hugo
 	url = https://github.com/tummychow/lanyon-hugo.git
 [submodule "hugo-finite"]
-	path = hugo-finite
-	url = https://github.com/lambdafu/hugo-finite.git
-[submodule "themes/hugo-finite"]
 	path = themes/hugo-finite
 	url = https://github.com/lambdafu/hugo-finite.git
