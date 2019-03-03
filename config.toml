@@ -71,7 +71,7 @@ disableHugoGeneratorInject = false
   justifyContent = true # Set "text-align: justify" to .content.
 
   # Directory name of your blog content (default is `content/posts`)
-  contentTypeName = "thoughts"
+  contentTypeName = "posts"
   # Default theme "light" or "dark"
   defaultTheme = "dark"
 
