@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/shsingh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://oi.shain.io
+  * I am shsingh (https://keybase.io/shsingh) on keybase.
+  * I have a public key ASD36ieRdMO6MzRa0MUnpk3BMo4GTUuuDOtYtJP9P75tWAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010139a5d1cf3ea4a41d9b224215159d8d5c6debbc723754abd431103b91696565170a",
+      "host": "keybase.io",
+      "kid": "0120f7ea279174c3ba33345ad0c527a64dc1328e064d4bae0ceb58b493fd3fbe6d580a",
+      "uid": "95d86635a6796ed64bbb4ec441e57e19",
+      "username": "shsingh"
+    },
+    "merkle_root": {
+      "ctime": 1550885957,
+      "hash": "18ef716b4be866736816edff8b9675eba5e7c7188c2238ff1937d87edd43552d9a09a56cc78a35a4ec31da2d98c742e16e255d3ef1773771a0ae0ac0731d5697",
+      "hash_meta": "42db5c5981ffc4f99691a7066c114e83c7e4605c629759b3d82054af1725b34b",
+      "seqno": 4814936
+    },
+    "service": {
+      "entropy": "dqaDBkwdSH9ZXoAe8pM4q0VD",
+      "hostname": "oi.shain.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.0.0"
+  },
+  "ctime": 1550886000,
+  "expire_in": 504576000,
+  "prev": "2ab9920de97823333f13fa85ebc3d9a85dd81eadc04903f4e7f3fed78c985be0",
+  "seqno": 47,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg9+onkXTDujM0WtDFJ6ZNwTKOBk1LrgzrWLST/T++bVgKp3BheWxvYWTESpcCL8QgKrmSDel4IzM/E/qF68PZqF3YHq3ASQP05/P+14yYW+DEIMSFyg5clX6z3loxkKDehsBo3EB6vnVwMb4/OhAavO4HAgHCo3NpZ8RAxUaHLpvKQLgYkEk7t6FRc87rKBrfq+jaDkHYcMZHrRxrtFSTR46beNxygQIOsa4tbesIC3SB5Rk0RGytlsyUB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKOUrF+dhvl0dHlQRDGHyfkstfyBQqrO5lQi9KUPUwWZo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/shsingh
+
+==================================================================
