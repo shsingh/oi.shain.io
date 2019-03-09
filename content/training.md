@@ -27,7 +27,11 @@ on automation and orchestration. Lab guides accompanying the presentation can be
 
 #### DevSecOps
 
-Presentation given to F5 Networks partners as part of a Capture The Flag day.
+Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament).
 Dockerfile for DevSecOps pipeline demo can be found here: https://github.com/F5-use-cases/f5-rs-container
+
+**Author:** F5 Networks
+
+**Presenter:** Shain Singh
 
 - [Security in a Agile/DevOps environment](/files/DevSecOps.pdf)

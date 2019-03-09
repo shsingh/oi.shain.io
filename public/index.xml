@@ -6,9 +6,12 @@
     <description>Recent content on {{ name: Shain Singh }}</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://oi.shain.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>="self" type="application/rss+xml" />
     
     
     <item>
@@ -32,7 +35,7 @@ Presenter: Shain Singh
  Introduction to Automation and Orchestration
  DevOps Methodology and Infrastructure as Code
  Security in a DevOps Environment
-  DevSecOps Presentation given to F5 Networks partners as part of a Capture The Flag day.</description>
+  DevSecOps Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament).</description>
     </item>
     
     <item>
