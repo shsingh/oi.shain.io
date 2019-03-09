@@ -7,7 +7,7 @@ author: Shain Singh
 
 <hr />
 
-#### SuperNetops
+#### Super-NetOps
 
 The following presentations are a part of training days given to F5 Networks customers and partners
 on automation and orchestration. Lab guides accompanying the presentation can be found here: https://clouddocs.f5.com/training/community/programmability/html/intro.html
@@ -22,3 +22,12 @@ on automation and orchestration. Lab guides accompanying the presentation can be
 
  - [Security in a DevOps Environment](/files/ANZ SuperNetOps - Class 3 \[Mar 2019\].pdf)
 
+
+<hr  />
+
+#### DevSecOps
+
+Presentation given to F5 Networks partners as part of a Capture The Flag day.
+Dockerfile for DevSecOps pipeline demo can be found here: https://github.com/F5-use-cases/f5-rs-container
+
+- [Security in a Agile/DevOps environment](/files/DevSecOps.pdf)
