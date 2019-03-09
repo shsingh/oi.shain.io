@@ -11,7 +11,7 @@ $ GET /info?id=shsingh
 
 ## Bio
 
-I know stuff about things.
+I know stuff about things. Or at least try to..
 
 ## Interests
 
@@ -19,8 +19,8 @@ I know stuff about things.
 - Automation
 - IoT
 - Software Defined {Networks|Everything}
-- 5G networks
-- Distributed Computing (clouds, containers and everything in between)
+- 5G Networks
+- Distributed Computing // clouds, containers and everything in between //
 
 ## History
 
