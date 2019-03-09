@@ -21,12 +21,12 @@
     </item>
     
     <item>
-      <title>Output</title>
-      <link>https://oi.shain.io/output/</link>
+      <title>Training</title>
+      <link>https://oi.shain.io/training/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://oi.shain.io/output/</guid>
-      <description> Training SuperNetops The following presentations are a part of training days given to F5 Networks customers and partners on automation and orchestration. Lab guides accompanying the presentation can be found here: https://clouddocs.f5.com/training/community/programmability/html/intro.html
+      <guid>https://oi.shain.io/training/</guid>
+      <description> SuperNetops The following presentations are a part of training days given to F5 Networks customers and partners on automation and orchestration. Lab guides accompanying the presentation can be found here: https://clouddocs.f5.com/training/community/programmability/html/intro.html
 Author: F5 Networks
 Presenter: Shain Singh
  Introduction to Automation and Orchestration
