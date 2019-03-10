@@ -1,6 +1,7 @@
 baseURL = "https://oi.shain.io"
 title   = "{{ name: Shain Singh }}"
 DefaultContentLanguage = "en"
+googleAnalytics = "UA-18013336-6"
 
 theme = "hello-friend-ng"
 
