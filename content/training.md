@@ -22,6 +22,7 @@ on automation and orchestration. Lab guides accompanying the presentation can be
 
  - [Security in a DevOps Environment](/files/ANZ SuperNetOps - Class 3 \[Mar 2019\].pdf)
 
+ - [Additional Notes for Lab Guide](/files/Additional Notes for SuperNetops Lab.pdf)
 
 <hr  />
 
