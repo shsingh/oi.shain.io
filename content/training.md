@@ -37,3 +37,17 @@ Dockerfile for DevSecOps pipeline demo can be found here: https://github.com/F5-
 
 - [Security in a Agile/DevOps environment](/files/DevSecOps.pdf)
 - [DevSecOps Demo with Jenkins](/files/DevSecOps demo.pdf)
+
+<hr />
+
+### DDoS (Distributed Denial of Service) 
+
+The following documents are recommendations from F5 around how best to prepare and mitigate against DDoS attacks.
+Included are runbooks, as well as guidance for operational practices.
+
+**Author:** F5 Networks
+
+- [DDoS Attack - Quick Reference Guide](/files/F5_DDoS-Attack-Quick-Reference-Sheets_form_Final.pdf)
+- [DDoS Playbook](/files/DDoS-Playbook_Final.pdf)
+- [DDoS Protection - Recommended Practices - Volume 1](/files/f5-ddos-protection-recommended-practices-volume-1.pdf)
+- [DDoS Protection - Recommended Practices - Volume 2](/files/RA-DDoS-Recommended-Practices-vol-2.pdf)
