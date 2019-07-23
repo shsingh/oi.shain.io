@@ -40,7 +40,7 @@ Dockerfile for DevSecOps pipeline demo can be found here: https://github.com/F5-
 
 <hr />
 
-### DDoS (Distributed Denial of Service) 
+#### DDoS
 
 The following documents are recommendations from F5 around how best to prepare and mitigate against DDoS attacks.
 Included are runbooks, as well as guidance for operational practices.
