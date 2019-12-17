@@ -63,7 +63,7 @@ The following document that accompanies the SSL Orchestrator Lab.
 
 **Author:** F5 Networks
 
-* [SSL Orchestrator 6.0 Lab Guide - suppliment to Ravello F5-led lab](/files/SSL%20Orchestrator%206.0%20Lab%20Guide%20-%20Ravello%20v3.pdf)
+* [SSL Orchestrator 6.0 Lab Guide - supplement to Ravello F5-led lab](/files/SSL%20Orchestrator%206.0%20Lab%20Guide%20-%20Ravello%20v3.pdf)
 
 <hr />
 <hr />
