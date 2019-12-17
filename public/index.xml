@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ name: Shain Singh }}</title>
@@ -12,28 +12,19 @@
     
     
     <item>
-      <title>$ init</title>
-      <link>https://oi.shain.io/thoughts/init/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://oi.shain.io/thoughts/init/</guid>
-      <description>A new tech blog sees the light of day. As if there weren’t enough of them already&amp;hellip;.</description>
-    </item>
-    
-    <item>
       <title>Training</title>
       <link>https://oi.shain.io/training/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://oi.shain.io/training/</guid>
-      <description>Super-NetOps The following presentations are a part of training days given to F5 Networks customers and partners on automation and orchestration. Lab guides accompanying the presentation can be found here: https://clouddocs.f5.com/training/community/programmability/html/intro.html
+      <description>Super-NetOps  The following presentations are a part of training days given to F5 Networks customers and partners on automation and orchestration. Lab guides accompanying the presentation can be found here: https://clouddocs.f5.com/training/community/programmability/html/intro.html
 Author: F5 Networks
 Presenter: Shain Singh
- Introduction to Automation and Orchestration
- DevOps Methodology and Infrastructure as Code
- Security in a DevOps Environment
- Additional Notes for Lab Guide
-  DevSecOps Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament).</description>
+  Introduction to Automation and Orchestration
+  DevOps Methodology and Infrastructure as Code
+  Security in a DevOps Environment
+  Additional Notes for Lab Guide
+  DevSecOps  Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament).</description>
     </item>
     
     <item>
@@ -44,7 +35,7 @@ Presenter: Shain Singh
       <guid>https://oi.shain.io/about/</guid>
       <description>$ GET /info?id=shsingh
 Bio I know stuff about things. Or at least try to..
-Interests  {Application|Network} Security Automation // leveraging quality/operations research into computing // IoT // it&amp;rsquo;s uses and effects on the application and network infrastructure // Software Defined {Networks|Everything} 5G Networks Distributed Computing // clouds, containers and everything in between //  History  Security Architect Network Solutions Consultant Systems Administation // before SRE and DevOps Engineer came into vogue // Application Delivery SME Telco/MPLS Design Lead  // more corporate-friendly career highlights at: https://linkedin.</description>
+Interests  {Application|Network} Security Automation // leveraging quality/operations research into computing // IoT // it&#39;s uses and effects on the application and network infrastructure // Software Defined {Networks|Everything} 5G Networks Distributed Computing // clouds, containers and everything in between //  History  Security Architect Network Solutions Consultant Systems Administation // before SRE and DevOps Engineer came into vogue // Application Delivery SME Telco/MPLS Design Lead  // more corporate-friendly career highlights at: https://linkedin.</description>
     </item>
     
   </channel>
