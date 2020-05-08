@@ -17,7 +17,7 @@ I know stuff about things. Or at least try to..
 
 - **{Application|Network} Security**
 - **Automation** // *leveraging quality/operations research into computing* //
-- **IoT** // *it's uses and effects on the application and network infrastructure* //
+- **IoT** // *its uses and effects on the application and network infrastructure* //
 - **Software Defined {Networks|Everything}**
 - **5G Networks**
 - **Distributed Computing** // *clouds, containers and everything in between* //
