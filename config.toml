@@ -43,9 +43,9 @@ disableHugoGeneratorInject = false
 [blackfriday]
   hrefTargetBlank = true
 
-[taxonomies]
-  tag      = "tags"
-  category = ""
+#[taxonomies]
+#  tag      = "tags"
+#  category = ""
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -54,7 +54,7 @@ disableHugoGeneratorInject = false
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "A group of electrons in the form of Shain Singh formed to write..."
+  description = "A group of electrons in the form of Shain Singh gathered around to write..."
   keywords = "homepage, blog, science, development, programming, networking, cloud, automation, orchestration, software"
   images = [""]
 
@@ -87,7 +87,7 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "email"
-    url  = "mailto:shain.singh@gmail.com"
+    url  = "mailto:shsingh@acm.org"
 
   [[params.social]]
     name = "github"
