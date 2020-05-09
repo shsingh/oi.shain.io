@@ -5,13 +5,13 @@ author: Shain Singh
 draft: false
 ---
 
-The past few months have placed a greater emphasis on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better <a href="https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/">transparency</a> and a <a href="https://blog.zoom.us/wordpress/2020/04/08/update-on-zoom-90-day-plan-to-bolster-key-privacy-and-security-initiatives/">commitment</a> to its users for improving its controls.
+The past few months have placed a greater emphasis on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better [transparency](https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/) and a [commitment](https://blog.zoom.us/wordpress/2020/04/08/update-on-zoom-90-day-plan-to-bolster-key-privacy-and-security-initiatives/) to its users for improving its controls.
 
 Putting opinions and conjecture aside for a moment, Zoom's current posture and response got me thinking - in particular, the following aspects were of interest to me:
 
-* Zoom currently have <a href="https://zoom.us/docs/doc/Zoom-Security-White-Paper.pdf">SOC2, TRUSTe, EU-US Privacy Shield, FedRAMP</a> security and privacy certifications
-* Due to the high demand, Zoom had traffic tunneled via China to meet capacity demands, which can now be controlled by <a href="https://blog.zoom.us/wordpress/2020/04/13/coming-april-18-control-your-zoom-data-routing/">explicitly choosing where your traffic should be routed</a>
-* In order to meet the <a href="https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/">lack of end-to-encyption</a>, Zoom has taken steps to hire <a href="https://cisac.fsi.stanford.edu/people/alex-stamos-0">Alex Stamos (ex-CISO for Facebook)</a> and has recently <a href="https://blog.zoom.us/wordpress/2020/05/07/zoom-acquires-keybase-and-announces-goal-of-developing-the-most-broadly-used-enterprise-end-to-end-encryption-offering/">purchased Keybase</a>.
+* Zoom currently have [SOC2, TRUSTe, EU-US Privacy Shield, FedRAMP](https://zoom.us/docs/doc/Zoom-Security-White-Paper.pdf[) security and privacy certifications
+* Due to the high demand, Zoom had traffic tunneled via China to meet capacity demands, which can now be controlled by [explicitly choosing where your traffic should be routed](https://blog.zoom.us/wordpress/2020/04/13/coming-april-18-control-your-zoom-data-routing/)
+* In order to meet the [lack of end-to-encyption](https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/), [Zoom has taken steps to hire  Alex Stamos (ex-CISO for Facebook)](https://cisac.fsi.stanford.edu/people/alex-stamos-0) and has recently [purchased Keybase](https://blog.zoom.us/wordpress/2020/05/07/zoom-acquires-keybase-and-announces-goal-of-developing-the-most-broadly-used-enterprise-end-to-end-encryption-offering/).
 
 #### Compliance
 
@@ -22,7 +22,7 @@ Without going into details around each of the security and privacy certification
 #### Data Sovereignty
 
 * Do we need the same level of transparency and data routing that Zoom is now providing out of all our cloud-based providers?
-* What levels of checks are typically done for supply chains when analysing data transfer and storage? (to belabour the point, Zoom's data was routed through China, <a href="https://blog.zoom.us/wordpress/2020/04/03/response-to-research-from-university-of-torontos-citizen-lab/">deployed on infrastructure provided by an American-owned public cloud provider, located in a data centre owner by an Australian communication service provider</a>)
+* What levels of checks are typically done for supply chains when analysing data transfer and storage? (to belabour the point, Zoom's data was routed through China, [deployed on infrastructure provided by an American-owned public cloud provider, located in a data centre owner by an Australian communication service provider](https://blog.zoom.us/wordpress/2020/04/03/response-to-research-from-university-of-torontos-citizen-lab/))
 
 #### Encryption
 
