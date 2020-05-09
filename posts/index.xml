@@ -14,14 +14,14 @@
             <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
             
             <guid>https://oi.shain.io/thoughts/thoughts-on-zoom/</guid>
-            <description>The past few months have placed a greater emphasis on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better transparencyand a commitmentto its users for improving its controls.
+            <description>The past few months have placed a greater emphasis on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better transparency and a commitment to its users for improving its controls.
 Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current posture and response got me thinking - in particular, the following aspects were of interest to me:</description>
-            <content type="html"><![CDATA[<p>The past few months have placed a greater emphasis on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better <!-- raw HTML omitted -->transparency<!-- raw HTML omitted --> and a <!-- raw HTML omitted -->commitment<!-- raw HTML omitted --> to its users for improving its controls.</p>
+            <content type="html"><![CDATA[<p>The past few months have placed a greater emphasis on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better <a href="https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/">transparency</a> and a <a href="https://blog.zoom.us/wordpress/2020/04/08/update-on-zoom-90-day-plan-to-bolster-key-privacy-and-security-initiatives/">commitment</a> to its users for improving its controls.</p>
 <p>Putting opinions and conjecture aside for a moment, Zoom&rsquo;s current posture and response got me thinking - in particular, the following aspects were of interest to me:</p>
 <ul>
-<li>Zoom currently have <!-- raw HTML omitted -->SOC2, TRUSTe, EU-US Privacy Shield, FedRAMP<!-- raw HTML omitted --> security and privacy certifications</li>
-<li>Due to the high demand, Zoom had traffic tunneled via China to meet capacity demands, which can now be controlled by <!-- raw HTML omitted -->explicitly choosing where your traffic should be routed<!-- raw HTML omitted --></li>
-<li>In order to meet the <!-- raw HTML omitted -->lack of end-to-encyption<!-- raw HTML omitted -->, Zoom has taken steps to hire <!-- raw HTML omitted -->Alex Stamos (ex-CISO for Facebook)<!-- raw HTML omitted --> and has recently <!-- raw HTML omitted -->purchased Keybase<!-- raw HTML omitted -->.</li>
+<li>Zoom currently have <a href="https://zoom.us/docs/doc/Zoom-Security-White-Paper.pdf%5B">SOC2, TRUSTe, EU-US Privacy Shield, FedRAMP</a> security and privacy certifications</li>
+<li>Due to the high demand, Zoom had traffic tunneled via China to meet capacity demands, which can now be controlled by <a href="https://blog.zoom.us/wordpress/2020/04/13/coming-april-18-control-your-zoom-data-routing/">explicitly choosing where your traffic should be routed</a></li>
+<li>In order to meet the <a href="https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/">lack of end-to-encyption</a>, <a href="https://cisac.fsi.stanford.edu/people/alex-stamos-0">Zoom has taken steps to hire  Alex Stamos (ex-CISO for Facebook)</a> and has recently <a href="https://blog.zoom.us/wordpress/2020/05/07/zoom-acquires-keybase-and-announces-goal-of-developing-the-most-broadly-used-enterprise-end-to-end-encryption-offering/">purchased Keybase</a>.</li>
 </ul>
 <h4 id="compliance">Compliance</h4>
 <p>Without going into details around each of the security and privacy certifications, most organisations look for at least SOC2 and FedRAMP from their cloud service providers (various aaS offerings). Some organisations will not only choose these certifications purely as a baseline upon which to build their own GRC (governance, risk and compliance), but may use them as the ONLY checks they do.</p>
@@ -31,7 +31,7 @@ Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current pos
 <h4 id="data-sovereignty">Data Sovereignty</h4>
 <ul>
 <li>Do we need the same level of transparency and data routing that Zoom is now providing out of all our cloud-based providers?</li>
-<li>What levels of checks are typically done for supply chains when analysing data transfer and storage? (to belabour the point, Zoom&rsquo;s data was routed through China, <!-- raw HTML omitted -->deployed on infrastructure provided by an American-owned public cloud provider, located in a data centre owner by an Australian communication service provider<!-- raw HTML omitted -->)</li>
+<li>What levels of checks are typically done for supply chains when analysing data transfer and storage? (to belabour the point, Zoom&rsquo;s data was routed through China, <a href="https://blog.zoom.us/wordpress/2020/04/03/response-to-research-from-university-of-torontos-citizen-lab/">deployed on infrastructure provided by an American-owned public cloud provider, located in a data centre owner by an Australian communication service provider</a>)</li>
 </ul>
 <h4 id="encryption">Encryption</h4>
 <p>End-to-end encryption typically makes use of PKI (Public Key Infrastructure) to ensure data in transit and at rest is secure.</p>
