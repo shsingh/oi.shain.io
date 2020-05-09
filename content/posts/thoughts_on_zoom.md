@@ -10,7 +10,7 @@ The past few months have placed a greater emphasis on remote working and particu
 Putting opinions and conjecture aside for a moment, Zoom's current posture and response got me thinking - in particular, the following aspects were of interest to me:
 
 * Zoom currently have [SOC2, TRUSTe, EU-US Privacy Shield, FedRAMP](https://zoom.us/docs/doc/Zoom-Security-White-Paper.pdf) security and privacy certifications
-* Due to the high demand, Zoom had traffic tunneled via China to meet capacity demands, which can now be controlled by [explicitly choosing where your traffic should be routed](https://blog.zoom.us/wordpress/2020/04/13/coming-april-18-control-your-zoom-data-routing/)
+* Due to the high demand, Zoom had traffic tunnelled via China to meet capacity demands, which can now be controlled by [explicitly choosing where your traffic should be routed](https://blog.zoom.us/wordpress/2020/04/13/coming-april-18-control-your-zoom-data-routing/)
 * In order to meet the [lack of end-to-encyption](https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/), [Zoom has taken steps to hire  Alex Stamos (ex-CISO for Facebook)](https://cisac.fsi.stanford.edu/people/alex-stamos-0) and has recently [purchased Keybase](https://blog.zoom.us/wordpress/2020/05/07/zoom-acquires-keybase-and-announces-goal-of-developing-the-most-broadly-used-enterprise-end-to-end-encryption-offering/).
 
 #### Compliance
@@ -31,7 +31,7 @@ The transfer and storage of data is certainly a key design component when lookin
 End-to-end encryption typically makes use of PKI (Public Key Infrastructure) to ensure data in transit and at rest is secure.
 
 * Have we taken stock of all forms of work/personal communication tools to see whether similar practices are followed, and if they are not do we move towards safer tools or demand better security from the existing tools?
-* If end-to-end encryption is not deployed, should we look to ensuring that PFS (Perfect Forward Secrecy) ciphers are used to mitigate against being able to store data and decrypt at a future point in time?
+* If end-to-end encryption is not deployed, should we look to ensuring that PFS (Perfect Forward Secrecy) ciphers are used to mitigate being able to store data and decrypt at a future point in time?
 
 I don't propose to know the answer to any of these questions, and I am not apologising for any of Zoom's mishaps - but I am interested in whether we are placing as much scrutiny across all the software and tools we use in our daily lives (without having to wait for a new article to reactively respond to our security posture).
 
