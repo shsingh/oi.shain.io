@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://oi.shain.io/thoughts/init/</loc>
-    <lastmod>2019-03-09T20:30:15+11:00</lastmod>
+    <loc>https://oi.shain.io/thoughts/thoughts-on-zoom/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://oi.shain.io/posts/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://oi.shain.io/thoughts/init/</loc>
     <lastmod>2019-03-09T20:30:15+11:00</lastmod>
   </url>
   
