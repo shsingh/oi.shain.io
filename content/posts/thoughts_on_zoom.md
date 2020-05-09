@@ -9,7 +9,7 @@ The past few months have placed a greater emphasis on remote working and particu
 
 Putting opinions and conjecture aside for a moment, Zoom's current posture and response got me thinking - in particular, the following aspects were of interest to me:
 
-* Zoom currently have [SOC2, TRUSTe, EU-US Privacy Shield, FedRAMP](https://zoom.us/docs/doc/Zoom-Security-White-Paper.pdf[) security and privacy certifications
+* Zoom currently have [SOC2, TRUSTe, EU-US Privacy Shield, FedRAMP](https://zoom.us/docs/doc/Zoom-Security-White-Paper.pdf) security and privacy certifications
 * Due to the high demand, Zoom had traffic tunneled via China to meet capacity demands, which can now be controlled by [explicitly choosing where your traffic should be routed](https://blog.zoom.us/wordpress/2020/04/13/coming-april-18-control-your-zoom-data-routing/)
 * In order to meet the [lack of end-to-encyption](https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/), [Zoom has taken steps to hire  Alex Stamos (ex-CISO for Facebook)](https://cisac.fsi.stanford.edu/people/alex-stamos-0) and has recently [purchased Keybase](https://blog.zoom.us/wordpress/2020/05/07/zoom-acquires-keybase-and-announces-goal-of-developing-the-most-broadly-used-enterprise-end-to-end-encryption-offering/).
 
