@@ -5,26 +5,15 @@
         <description>Recent content in Posts on {{ name: Shain Singh }}</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
         <atom:link href="https://oi.shain.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>$ init</title>
-            <link>https://oi.shain.io/thoughts/init/</link>
-            <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+            <title>$ thoughts on zoom</title>
+            <link>https://oi.shain.io/thoughts/thoughts-on-zoom/</link>
+            <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
             
-            <guid>https://oi.shain.io/thoughts/init/</guid>
-            <description>A new tech blog sees the light of day. As if there weren’t enough of them already&amp;hellip;.</description>
-            <content type="html"><![CDATA[<p>A new tech blog sees the light of day. As if there weren’t enough of them already&hellip;.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title></title>
-            <link>https://oi.shain.io/thoughts/</link>
-            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-            
-            <guid>https://oi.shain.io/thoughts/</guid>
+            <guid>https://oi.shain.io/thoughts/thoughts-on-zoom/</guid>
             <description>The past few months have placed immense demand on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better transparency and a commitment to its users for improving its controls.
 Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current posture and response got me thinking - in particular, the following aspects were of interest to me:</description>
             <content type="html"><![CDATA[<p>The past few months have placed immense demand on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better <a href="https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/" target="_blank">transparency</a>
@@ -61,6 +50,17 @@ Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current pos
 </ul>
 <p>I don&rsquo;t propose to know the answer to any of these questions, and I am not apologising for any of Zoom&rsquo;s mishaps - I am interested in whether we are placing as much scrutiny across all the software and tools we use in our daily lives (without having to wait for a new article to reactively respond to our security posture).</p>
 <p>I will certainly be keeping a close watch on the 90-day plan that Zoom has outlined.  In particular I will look to seeing whether there are practices that they will be undertaking that I need to take into account myself (in terms of choice of software for personal use) as well as in conversations with my customers and partners (when discussing security aspects of their migration to public cloud and cloud-based services).</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>$ init</title>
+            <link>https://oi.shain.io/thoughts/init/</link>
+            <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://oi.shain.io/thoughts/init/</guid>
+            <description>A new tech blog sees the light of day. As if there weren’t enough of them already&amp;hellip;.</description>
+            <content type="html"><![CDATA[<p>A new tech blog sees the light of day. As if there weren’t enough of them already&hellip;.</p>
 ]]></content>
         </item>
         
