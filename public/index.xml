@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>$ thoughts on zoom</title>
+      <link>https://oi.shain.io/thoughts/thoughts-on-zoom/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://oi.shain.io/thoughts/thoughts-on-zoom/</guid>
+      <description>The past few months have placed immense demand on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better transparency and a commitment to its users for improving its controls.
+Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current posture and response got me thinking - in particular, the following aspects were of interest to me:</description>
+    </item>
+    
+    <item>
       <title>$ init</title>
       <link>https://oi.shain.io/thoughts/init/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
@@ -41,16 +51,6 @@ Presenter: Shain Singh
       <description>$ GET /info?id=shsingh
 Bio I know stuff about things. Or at least try to..
 Interests  {Application|Network} Security Automation // leveraging quality/operations research into computing // IoT // its uses and effects on the application and network infrastructure // Software Defined {Networks|Everything} 5G Networks Distributed Computing // clouds, containers and everything in between //  History  Security Architect Network Solutions Consultant Systems Administation // before SRE and DevOps Engineer &amp;lt;em&amp;gt;came into vogue&amp;lt;/em&amp;gt; // Application Delivery SME Telco/MPLS Design Lead  // more corporate-friendly career highlights at: https://linkedin.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://oi.shain.io/thoughts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oi.shain.io/thoughts/</guid>
-      <description>The past few months have placed immense demand on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better transparency and a commitment to its users for improving its controls.
-Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current posture and response got me thinking - in particular, the following aspects were of interest to me:</description>
     </item>
     
   </channel>

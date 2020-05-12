@@ -1,3 +1,10 @@
+---
+title: $ thoughts on zoom
+date: 2020-05-09
+author: Shain Singh
+draft: false
+---
+
 The past few months have placed immense demand on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better [transparency](https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/) and a [commitment](https://blog.zoom.us/wordpress/2020/04/08/update-on-zoom-90-day-plan-to-bolster-key-privacy-and-security-initiatives/) to its users for improving its controls.
 
 Putting opinions and conjecture aside for a moment, Zoom's current posture and response got me thinking - in particular, the following aspects were of interest to me:
