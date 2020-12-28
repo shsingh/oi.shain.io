@@ -4,8 +4,27 @@ date: 2019-03-03
 draft: false
 author: Shain Singh
 ---
+``````
+$ GET /about?blog=shsingh
+``````
 
+पुरुषार्थ (puruṣārtha)- the Hindu belief that there are four goals or objectives for human existence.
+
+- Kāma: sensory pleasure
+- Artha: material prosperity
+- Dharma: moral righteousness
+- Mokṣa: spiritual liberation
+
+My aim will be to cover materials painted in the colours of the four goals of puruṣārtha.
+
+Enjoy your visit.
+
+नमस्ते (Namaste)
+
+
+``````
 $ GET /info?id=shsingh
+``````
 
 {{< image src="/img/diabolik.png" alt="Shain Singh" position="left" style="height:125px;">}}
 

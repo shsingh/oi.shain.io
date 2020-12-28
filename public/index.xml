@@ -48,9 +48,22 @@ Presenter: Shain Singh
       <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://oi.shain.io/about/</guid>
-      <description>$ GET /info?id=shsingh
-Bio I know stuff about things. Or at least try to..
+      <description>$ GET /about?blog=shsingh पुरुषार्थ (puruṣārtha)- the Hindu belief that there are four goals or objectives for human existence.
+ Kāma: sensory pleasure Artha: material prosperity Dharma: moral righteousness Mokṣa: spiritual liberation  My aim will be to cover materials painted in the colours of the four goals of puruṣārtha.
+Enjoy your visit.
+नमस्ते (Namaste)
+$ GET /info?id=shsingh  Bio I know stuff about things. Or at least try to..
 Interests  {Application|Network} Security Automation // leveraging quality/operations research into computing // IoT // its uses and effects on the application and network infrastructure // Software Defined {Networks|Everything} 5G Networks Distributed Computing // clouds, containers and everything in between //  History  Security Architect Network Solutions Consultant Systems Administation // before SRE and DevOps Engineer &amp;lt;em&amp;gt;came into vogue&amp;lt;/em&amp;gt; // Application Delivery SME Telco/MPLS Design Lead  // more corporate-friendly career highlights at: https://linkedin.</description>
+    </item>
+    
+    <item>
+      <title>$ research</title>
+      <link>https://oi.shain.io/thoughts/research/</link>
+      <pubDate>Mon, 16 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://oi.shain.io/thoughts/research/</guid>
+      <description>&amp;quot;Give me six hours to chop down a tree and I will spend the first four sharpening the axe&amp;quot; - Abraham Lincoln I am still learning how exactly to use this medium to write.
+The lack of content for a while is not indicative of an absence of posts to publish, rather a “getting to know one’s surrounds”.</description>
     </item>
     
   </channel>
