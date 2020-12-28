@@ -21,7 +21,6 @@ Enjoy your visit.
 
 नमस्ते (Namaste)
 
-
 ``````
 $ GET /info?id=shsingh
 ``````

@@ -10,7 +10,5 @@ draft: false
 sharpening the axe" - Abraham Lincoln
 ```
 
-I am still learning how exactly to use this medium to write.
-
-The lack of content for a while is not indicative of an absence of posts to publish, rather a “getting to know one’s surrounds”.
+I am still learning how exactly to use this medium to write. The lack of content for a while is not indicative of an absence of posts to publish, rather a “getting to know one’s surrounds”.
 
