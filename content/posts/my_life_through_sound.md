@@ -40,7 +40,7 @@ In keeping with the Romantic ideals, this is a set of songs curated for death - 
 {{< spotify_embed "https://open.spotify.com/embed/playlist/4iZ0pERKrckADhQVaa6A5q" >}}
 
 #### --> [goanna down under midnight to inxs land](https://open.spotify.com/playlist/320LYupnMYC8Mx6iJR8sYU) <-- click for Spotify
-The last 10yrs have seen me travel A LOT. There are no words to describe the feeling when the plane is hovering above Melbourne Airport ready to land and I hear “Solid Rock” or “Great Southern Land”. Patriotism is not about following your country in sporting matches, its about identification of the social and cultural norms in your city or country of choice. Nothing and no-one defines what it is to be Australian to me like this playlist.
+The last 10yrs have seen me travel A LOT. There are no words to describe the feeling when the plane is hovering above Melbourne Airport ready to land and I hear “Solid Rock” or “Great Southern Land”. Patriotism is not about following your country in sporting matches, its about identification with the social and cultural norms in your city or country of choice (politics notwithstanding). Nothing and no-one defines what it is to be Australian to me like this playlist.
 
 {{< spotify_embed "https://open.spotify.com/embed/playlist/320LYupnMYC8Mx6iJR8sYU" >}}
 
