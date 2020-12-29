@@ -5,7 +5,7 @@ draft: false
 author: Shain Singh
 ---
 ``````
-$ GET /about?blog=shsingh
+$ POST /about?definition=blog
 ``````
 
 पुरुषार्थ (puruṣārtha)- the Hindu belief that there are four goals or objectives for human existence.
@@ -27,11 +27,11 @@ $ GET /info?id=shsingh
 
 {{< image src="/img/diabolik.png" alt="Shain Singh" position="left" style="height:125px;">}}
 
-## Bio
+## _Bio_
 
 I know stuff about things. Or at least try to..
 
-## Interests
+## _Interests_
 
 - **{Application|Network} Security**
 - **Automation** // *leveraging quality/operations research into computing* //
@@ -40,7 +40,7 @@ I know stuff about things. Or at least try to..
 - **5G Networks**
 - **Distributed Computing** // *clouds, containers and everything in between* //
 
-## History
+## _History_
 
 - **Security Architect**
 - **Network Solutions Consultant**
