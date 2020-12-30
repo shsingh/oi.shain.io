@@ -29,9 +29,9 @@ $ GET /info?id=shsingh
 
 ## _Bio_
 
-I know stuff about things. Or at least try to..
+I know stuff about things, or things about stuff... At least I try to.
 
-## _Interests_
+## _Technology Interests_
 
 - **{Application|Network} Security**
 - **Automation** // *leveraging quality/operations research into computing* //
@@ -40,12 +40,12 @@ I know stuff about things. Or at least try to..
 - **5G Networks**
 - **Distributed Computing** // *clouds, containers and everything in between* //
 
-## _History_
+## _Career History_
 
 - **Security Architect**
 - **Network Solutions Consultant**
-- **Systems Administation** // *before SRE and DevOps Engineer* [*came into vogue*](https://www.youtube.com/watch?v=BRmFYJx28V0) //
+- **Systems Administation** // *before SRE and DevOps Engineer [came into vogue](https://www.youtube.com/watch?v=BRmFYJx28V0)* //
 - **Application Delivery SME**
 - **Telco/MPLS Design Lead**
 
-// *more corporate-friendly career highlights at: https://linkedin.com/in/shsingh* //
+// *more corporate-friendly career highlights at: [https://linkedin.com/in/shsingh](https://www.linkedin.com/in/shsingh/)* //
