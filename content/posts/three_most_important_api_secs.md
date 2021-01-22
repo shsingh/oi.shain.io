@@ -6,7 +6,7 @@ draft: false
 ---
 
 One of the most rewarding things about my role at F5 is that it involves talking to customers about their digital transformation initiatives.
-The benefit of working for a company that provides a [gateway](https://www.nginx.com/solutions/api-management-gateway/), [web application and API protection](https://www.f5.com/solutions/application-security/web-app-and-api-protection) and [fraud/automation defence] (https://www.shapesecurity.com/attacks) means that my conversations and workshops are never boring!
+The benefit of working for a company that provides a [gateway](https://www.nginx.com/solutions/api-management-gateway/), [web application and API protection](https://www.f5.com/solutions/application-security/web-app-and-api-protection) and [fraud/automation defence](https://www.shapesecurity.com/attacks) means that my conversations and workshops are never boring!
 
 Through my customers I have learnt about how APIs have become a critical piece of infrastructure, and my real sense of satisfaction comes not only when I help them plug any security gaps they may have, but when I combine with my partner-in-crime [Shahnawaz Backer](https://www.linkedin.com/in/backers/) to provide them with threat data and insights (something they don't need to wait to read in front page news).
 
