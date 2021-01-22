@@ -10,7 +10,7 @@ The benefit of working for a company that provides a [gateway](https://www.nginx
 
 Through my customers I have learnt about how APIs have become a critical piece of infrastructure, and my real sense of satisfaction comes not only when I help them plug any security gaps they may have, but when I combine with my partner-in-crime [Shahnawaz Backer](https://www.linkedin.com/in/backers/) to provide them with threat data and insights (something they don't need to wait to read in front page news).
 
-From amongst my travels, I have compiled a list of the top 3 most important API specs that any citizen/budding entrepreneur/technology hobbyist/pen-tester should become familiar with in my personal order of importance.
+From amongst my travels, I have compiled a list of the top 3 most important API specs that any citizen/budding entrepreneur/technology hobbyist/pen-tester should become familiar with in my personal order of noteworthiness.
 
 ### 1. [HL7](http://hl7.org/fhir/) (Health industry)
 Arguably the most important API definition you may have not heard of. Patient records? Somewhat topical post-2020, and yes its all here. HL7 is a standard development organisation that has defined an API for exchanging electronic health records (EHR) called Fast Healthcare Interoperability Resources (FHIR). Examples of uses for healthcare include patient records, admissions details, diagnostic reports and medications which can all be received in JSON or XML formats. FHIR is [seen by many](https://apievangelist.com/2019/09/18/creating-a-postman-collection-for-the-fast-healthcare-interoperability-resources-fhir-specification/) as the most sophisticated openly defined industry schema with government and industry support with the potential to affect all of our lives.
