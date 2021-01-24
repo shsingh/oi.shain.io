@@ -6,11 +6,7 @@
     <description>Recent content on {{ name: Shain Singh }}</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://oi.shain.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://oi.shain.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>$ the three most important api specs i see at work</title>
       <link>https://oi.shain.io/thoughts/the-three-most-important-api-specs-i-see-at-work/</link>
@@ -18,7 +14,7 @@
       
       <guid>https://oi.shain.io/thoughts/the-three-most-important-api-specs-i-see-at-work/</guid>
       <description>One of the most rewarding things about my role at F5 is that it involves talking to customers about their digital transformation initiatives. The benefit of working for a company that provides a gateway , web application and API protection and fraud/automated threat defence means that my conversations and workshops are never boring!
-Through my customers I have learnt about how APIs have become a critical piece of infrastructure, and my real sense of satisfaction comes not only when I help them plug any security gaps they may have, but when I combine with my partner-in-crime Shahnawaz Backer to provide them with threat data and insights (something they don&amp;rsquo;t need to wait to read in front page news).</description>
+Through my customers I have learnt about how APIs have become a critical piece of infrastructure. My real sense of satisfaction comes not only when I help them plug any security gaps they may have, but when I combine with my partner-in-crime Shahnawaz Backer to provide them with threat data and insights (something they don&amp;rsquo;t need to wait to read in front page news).</description>
     </item>
     
     <item>
