@@ -16,11 +16,11 @@ on automation and orchestration. Lab guides accompanying the presentation can be
 
 **Presenter:** Shain Singh
 
- - [Introduction to Automation and Orchestration](/files/ANZ%20SuperNetOps%20-%20Class%201%20\[Aug%202018\].pdf)
+ - [Introduction to Automation and Orchestration](/files/ANZ%20SuperNetOps%20-%20Class%201%20[Aug%202018].pdf)
 
- - [DevOps Methodology and Infrastructure as Code](/files/ANZ%20SuperNetOps%20-%20Class%202%20\[Mar%202019\].pdf)
+ - [DevOps Methodology and Infrastructure as Code](/files/ANZ%20SuperNetOps%20-%20Class%202%20[Mar%202019].pdf)
 
- - [Security in a DevOps Environment](/files/ANZ%20SuperNetOps%20-%20Class%203%20\[Mar%202019\].pdf)
+ - [Security in a DevOps Environment](/files/ANZ%20SuperNetOps%20-%20Class%203%20[Mar%202019].pdf)
 
  - [Additional Notes for Lab Guide](/files/Additional%20Notes%20for%20SuperNetops%20Lab.pdf)
 
