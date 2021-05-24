@@ -36,5 +36,5 @@ author: Shain Singh
 
 **_June_**
 - ISC<sup>2</sup> Webinar: 
-  - slides: [Don\'t get stung by #OWASP Top 10](/files/ISC2%20Webinar%20-%20Don%27t%20get%20stung%20by%20%23OWASP%20Top%2010%20[June%202020].pdf)
+  - slides: [Don\'t get stung by \#OWASP Top 10](/files/ISC2%20Webinar%20-%20Don%27t%20get%20stung%20by%20%23OWASP%20Top%2010%20[June%202020].pdf)
   - video: https://www.brighttalk.com/webcast/17570/452311
