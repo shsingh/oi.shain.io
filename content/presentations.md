@@ -9,6 +9,10 @@ author: Shain Singh
 
 #### 2021 {#2021}
 
+**_June_**
+- BrightTalk Webinar (with Forrester):
+  - slides: [5G Opportunities and Challenges for Infrastructure Modernisation](/files/Brighttalk%20Webinar%20with%20Forrester%20-%205G%20Opportunities%20and%20Challenges%20for%20Infrastructure%20Modernisation%20[June%202021].pdf)
+
 **_May_**
 - ISACA Canberra Chapter: 
   - slides: [Using Technology to Help With GRC in Public Cloud and Modern Application Environments](/files/ISACA%20Canberra%20-%20Using%20Technology%20to%20Help%20With%20GRC%20in%20Public%20Cloud%20and%20Modern%20Application%20Environments%20[May%202021].pdf)
