@@ -97,6 +97,10 @@ disableHugoGeneratorInject = false
     name = "linkedin"
     url  = "https://www.linkedin.com/in/shsingh"
 
+  [[params.social]]
+    name = "keybase"
+    url  = "https://keybase.io/shsingh"
+
 [languages]
   [languages.en]
     subtitle  = ""
@@ -112,7 +116,7 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     identifier = "thoughts"
     name       = "Thoughts"
-    url        = "thoughts/"
+    url        = "posts/"
   [[menu.main]]
     identifier = "presentations"
     name       = "Presentations"
