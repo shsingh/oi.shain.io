@@ -1,9 +1,0 @@
-[submodule "themes/hello-friend-ng"]
-	path = themes/hello-friend-ng
-	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng.git
-[submodule "themes/lanyon-hugo"]
-	path = themes/lanyon-hugo
-	url = https://github.com/tummychow/lanyon-hugo.git
-[submodule "hugo-finite"]
-	path = themes/hugo-finite
-	url = https://github.com/lambdafu/hugo-finite.git
