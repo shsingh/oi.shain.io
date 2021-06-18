@@ -12,6 +12,7 @@ author: Shain Singh
 **_June_**
 - BrightTALK Webinar (with Forrester):
   - slides: [5G Opportunities and Challenges for Infrastructure Modernisation](/files/Brighttalk%20Webinar%20with%20Forrester%20-%205G%20Opportunities%20and%20Challenges%20for%20Infrastructure%20Modernisation%20[June%202021].pdf)
+  - video: https://www.brighttalk.com/webcast/17570/494864
 
 **_May_**
 - ISACA Canberra Chapter:
