@@ -14,11 +14,11 @@
       
       <guid>https://oi.shain.io/presentations/</guid>
       <description>2021 June
- BrightTALK Webinar (with Forrester):  slides: 5G Opportunities and Challenges for Infrastructure Modernisation  video: https://www.brighttalk.com/webcast/17570/494864    May
+ BrightTALK Webinar (with Forrester):  slides: 5G Opportunities and Challenges for Infrastructure Modernisation video: https://www.brighttalk.com/webcast/17570/494864    May
   ISACA Canberra Chapter:
- slides: Using Technology to Help With GRC in Public Cloud and Modern Application Environments     ISC2 Webinar:
- slides: Tools and Techniques used in Automated Threats  video: https://www.brighttalk.com/webcast/14253/478777    January
- BrightTALK Webinar:  slides: How 5G Success Starts With Your Cloud-Native Infrastructure  video: https://www.</description>
+ slides: Using Technology to Help With GRC in Public Cloud and Modern Application Environments    ISC2 Webinar:
+ slides: Tools and Techniques used in Automated Threats video: https://www.brighttalk.com/webcast/14253/478777    January
+ BrightTALK Webinar:  slides: How 5G Success Starts With Your Cloud-Native Infrastructure video: https://www.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://oi.shain.io/thoughts/the-three-most-important-api-specs-i-see-at-work/</guid>
-      <description>One of the most rewarding things about my role at F5 is that it involves talking to customers about their digital transformation initiatives. The benefit of working for a company that provides a gateway , web application and API protection and fraud/automated threat defence means that my conversations and workshops are never boring!
+      <description>One of the most rewarding things about my role at F5 is that it involves talking to customers about their digital transformation initiatives. The benefit of working for a company that provides a gateway, web application and API protection and fraud/automated threat defence means that my conversations and workshops are never boring!
 Through my customers I have learnt about how APIs have become a critical piece of infrastructure. My real sense of satisfaction comes not only when I help them plug any security gaps they may have, but when I combine with my partner-in-crime Shahnawaz Backer to provide them with threat data and insights (something they don&amp;rsquo;t need to wait to read in front page news).</description>
     </item>
     
@@ -68,7 +68,11 @@ Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current pos
       <description>Super-NetOps The following presentations are a part of training days given to F5 Networks customers and partners on automation and orchestration. Lab guides accompanying the presentation can be found here: https://clouddocs.f5.com/training/community/programmability/html/intro.html
 Author: F5 Networks
 Presenter: Shain Singh
-  Introduction to Automation and Orchestration   DevOps Methodology and Infrastructure as Code   Security in a DevOps Environment   Additional Notes for Lab Guide   DevSecOps Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament).</description>
+  Introduction to Automation and Orchestration
+  DevOps Methodology and Infrastructure as Code
+  Security in a DevOps Environment
+  Additional Notes for Lab Guide
+  DevSecOps Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament).</description>
     </item>
     
     <item>
