@@ -1,16 +1,17 @@
 baseURL = "https://oi.shain.io"
 title   = "{{ name: Shain Singh }}"
-DefaultContentLanguage = "en"
-googleAnalytics = "UA-18013336-6"
-
+languageCode = "en"
 theme = "hello-friend-ng"
 
-pygmentsCodefences = true
-pygmentsUseClasses = true
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+PygmentsUseClasses = true
+
+paginate = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
-# googleAnalytics = ""
+googleAnalytics = "UA-18013336-6"
 # disqusShortname = ""
 
 archetypeDir = "archetypes"
@@ -18,10 +19,9 @@ contentDir   = "content"
 dataDir      = "data"
 layoutDir    = "layouts"
 publishDir   = "public"
-staticDir    = "static"
 
-buildDrafts  = true
-buildFuture  = true
+buildDrafts  = false
+buildFuture  = false
 buildExpored = false
 canonifyURLs = true
 
@@ -43,9 +43,12 @@ disableHugoGeneratorInject = false
 [blackfriday]
   hrefTargetBlank = true
 
-#[taxonomies]
+# [taxonomies]
 #  tag      = "tags"
-#  category = ""
+#  category = "categories"
+#  series   = "series"
+
+
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -63,13 +66,35 @@ disableHugoGeneratorInject = false
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   gitUrl = "https://github.com/shsingh/oi.shain.io/commit/"
 
+  # Sharing buttons
+  #
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  #
+  enableSharingButtons = true
+
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   customCSS = []
   customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
-  justifyContent = true # Set "text-align: justify" to .content.
+  justifyContent = false # Set "text-align: justify" to .content.
+  
+
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  [params.footer]
+    trademark = true
+    rss = true
+    copyright = true
+    author = true
+
+    topText = []
+    bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+            "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"]
 
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
@@ -77,6 +102,7 @@ disableHugoGeneratorInject = false
   defaultTheme = "dark"
 
   [params.logo]
+    logoMark     = ">"
     logoText     = "shsingh@opinionated:~blog$ "
     logoHomeLink = "/"
 
@@ -87,7 +113,7 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "email"
-    url  = "mailto:shsingh@acm.org"
+    url  = "mailto:shsingh@ieee.org"
 
   [[params.social]]
     name = "github"
@@ -106,7 +132,6 @@ disableHugoGeneratorInject = false
     subtitle  = ""
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
 
 [menu]
   [[menu.main]]
