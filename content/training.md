@@ -7,33 +7,26 @@ author: Shain Singh
 
 <hr />
 
-#### Super-NetOps
+#### SSL Orchestrator
 
-The following presentations are a part of training days given to F5 Networks customers and partners
-on automation and orchestration. Lab guides accompanying the presentation can be found here: <https://clouddocs.f5.com/training/community/programmability/html/intro.html>
+The following document accompanies the SSL Orchestrator Lab.
 
-**Author:** F5 Networks
+**Author:** [F5](https://clouddocs.f5.com/training/community/) 
 
-**Presenter:** Shain Singh
+**Presenter:** [Shain Singh](https://shain.io/)
 
-- [Introduction to Automation and Orchestration](/files/ANZ%20SuperNetOps%20-%20Class%201%20[Aug%202018].pdf)
+- [SSL Orchestrator 8.2 Lab Guide - supplement to instructor-led lab](/files/SSL%20Orchestrator%208.2%20Lab%20Guide%20-%20UDF3%20v1.pdf)
 
-- [DevOps Methodology and Infrastructure as Code](/files/ANZ%20SuperNetOps%20-%20Class%202%20[Mar%202019].pdf)
-
-- [Security in a DevOps Environment](/files/ANZ%20SuperNetOps%20-%20Class%203%20[Mar%202019].pdf)
-
-- [Additional Notes for Lab Guide](/files/Additional%20Notes%20for%20SuperNetops%20Lab.pdf)
-
-<hr  />
+<hr />
 
 #### DevSecOps
 
 Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament).
 Dockerfile for DevSecOps pipeline demo can be found here: <https://github.com/F5-use-cases/f5-rs-container>
 
-**Author:** F5 Networks
+**Author:** [F5](https://clouddocs.f5.com/training/community/) 
 
-**Presenter:** Shain Singh
+**Presenter:** [Shain Singh](https://shain.io/)
 
 - [Security in a Agile/DevOps environment](/files/DevSecOps.pdf)
 - [DevSecOps Demo with Jenkins](/files/DevSecOps%20demo.pdf)
@@ -45,7 +38,9 @@ Dockerfile for DevSecOps pipeline demo can be found here: <https://github.com/F5
 The following documents are recommendations from F5 around how best to prepare and mitigate against DDoS attacks.
 Included are runbooks, as well as guidance for operational practices.
 
-**Author:** F5 Networks
+**Author:** [F5](https://clouddocs.f5.com/training/community/) 
+
+**Presenter:** [Shain Singh](https://shain.io/)
 
 - [DDoS Attack - Quick Reference Guide](/files/F5_DDoS-Attack-Quick-Reference-Sheets_form_Final.pdf)
 - [DDoS Playbook](/files/DDoS-Playbook_Final.pdf)
@@ -54,11 +49,25 @@ Included are runbooks, as well as guidance for operational practices.
 
 <hr  />
 
-#### SSL Orchestrator
+#### Super-NetOps
 
-The following document that accompanies the SSL Orchestrator Lab.
+The following presentations are a part of training days given to F5 Networks customers and partners
+on automation and orchestration. Lab guides accompanying the presentation can be found here: <https://clouddocs.f5.com/training/community/programmability/html/intro.html>
 
-**Author:** F5 Networks
+**Author:** [F5](https://clouddocs.f5.com/training/community/) 
 
-- [SSL Orchestrator 8.2 Lab Guide - supplement to F5-led lab](/files/SSL%20Orchestrator%208.2%20Lab%20Guide%20-%20UDF3%20v1.pdf)
+**Presenter:** [Shain Singh](https://shain.io/)
+
+- [Introduction to Automation and Orchestration](/files/ANZ%20SuperNetOps%20-%20Class%201%20[Aug%202018].pdf)
+
+- [DevOps Methodology and Infrastructure as Code](/files/ANZ%20SuperNetOps%20-%20Class%202%20[Mar%202019].pdf)
+
+- [Security in a DevOps Environment](/files/ANZ%20SuperNetOps%20-%20Class%203%20[Mar%202019].pdf)
+
+- [Additional Notes for Lab Guide](/files/Additional%20Notes%20for%20SuperNetops%20Lab.pdf)
+
+<hr  />
+
+
+
 
