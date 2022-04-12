@@ -21,7 +21,7 @@ author: Shain Singh
 
 **_November_**
 
-- Australian Information Security Association (AISA) Cyberconference 2021
+- Australian Information Security Association (AISA) - Australian Cyber Conference 2021:
   - slides: [5G Security - What it means for Service Providers and their customers](/files/AISA%20Australian%20Cyber%20Conference%20-%205G%20Security%20-%20What%20it%20means%20for%20Service%20Providers%20and%20their%20customers%20[November%202021].pdf)
 
 - BrightTALK Webinar:
