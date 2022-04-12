@@ -14,12 +14,12 @@
       <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://oi.shain.io/presentations/</guid>
-      <description>2021 June
- BrightTALK Webinar (with Forrester):  slides: 5G Opportunities and Challenges for Infrastructure Modernisation video: https://www.brighttalk.com/webcast/17570/494864    May
-  ISACA Canberra Chapter:
- slides: Using Technology to Help With GRC in Public Cloud and Modern Application Environments    ISC2 Webinar:
- slides: Tools and Techniques used in Automated Threats video: https://www.brighttalk.com/webcast/14253/478777    January
- BrightTALK Webinar:  slides: How 5G Success Starts With Your Cloud-Native Infrastructure video: https://www.</description>
+      <description>2022 March
+ Philippine Institute of Cybersecurity Professionals (PICSPro):  slides: Insights from 2022 Application Protection Report video: https://www.facebook.com/PICSProfessionals/videos/685974415881142    2021 November
+  Australian Information Security Association (AISA) Cyberconference 2021
+ slides: 5G Security - What it means for Service Providers and their customers    BrightTALK Webinar:
+ slides: Leveraging Cloud-Native Operations to Build Edge-as-a-Service video: https://www.brighttalk.com/webcast/17570/514257    October
+ BrightTALK Webinar:  slides: Effective DevSecOps - How to Integrate Security into Pipelines video: https://www.</description>
     </item>
     
     <item>
@@ -94,7 +94,7 @@ $ GET /info?id=shsingh  Bio I know stuff about things, or things about stuff&amp
       <pubDate>Mon, 16 Aug 2010 00:00:00 +0000</pubDate>
       
       <guid>https://oi.shain.io/thoughts/research/</guid>
-      <description>&amp;quot;Give me six hours to chop down a tree and I will spend the first four sharpening the axe&amp;quot; - Abraham Lincoln I am still learning how exactly to use this medium to write. The lack of content for a while is not indicative of an absence of posts to publish, rather a “getting to know one’s surrounds”.</description>
+      <description>&amp;#34;Give me six hours to chop down a tree and I will spend the first four sharpening the axe&amp;#34; - Abraham Lincoln I am still learning how exactly to use this medium to write. The lack of content for a while is not indicative of an absence of posts to publish, rather a “getting to know one’s surrounds”.</description>
     </item>
     
   </channel>
