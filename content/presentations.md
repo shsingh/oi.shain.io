@@ -7,7 +7,38 @@ author: Shain Singh
 
 <hr />
 
+#### 2022 {#2022}
+
+**_March_**
+
+- Philippine Institute of Cybersecurity Professionals (PICSPro):
+  - slides: [Insights from 2022 Application Protection Report](/files/PICSPro%20-%20Insights%20from%202022%20Application%20Protection%20Report%20[March%202022].pdf)
+  - video: <https://www.facebook.com/PICSProfessionals/videos/685974415881142>
+
+<hr />
+
 #### 2021 {#2021}
+
+**_November_**
+
+- Australian Information Security Association (AISA) Cyberconference 2021
+  - slides: [5G Security - What it means for Service Providers and their customers](/files/AISA%20Australian%20Cyber%20Conference%20-%205G%20Security%20-%20What%20it%20means%20for%20Service%20Providers%20and%20their%20customers%20[November%202021].pdf)
+
+- BrightTALK Webinar:
+  - slides: [Leveraging Cloud-Native Operations to Build Edge-as-a-Service](/files/Brighttalk%20Webinar%20-%20%20Leveraging%20Cloud-Native%20Operations%20to%20Build%20Edge-as-a-Service%20[November%202021].pdf)
+  - video: <https://www.brighttalk.com/webcast/17570/514257>
+
+**_October_**
+
+- BrightTALK Webinar:
+  - slides: [Effective DevSecOps - How to Integrate Security into Pipelines](/files/Brighttalk%20Webinar%20-%20%20Effective%20DevSecOps%20-%20How%20to%20Integrate%20Security%20into%20Pipelines%20[October%202021].pdf)
+  - video: <https://www.brighttalk.com/webcast/17570/520808>
+
+**_August_**
+
+- BrightTALK Webinar:
+  - slides: [Application Protection Report - Art of Securing Modern APIs](/files/Brighttalk%20Webinar%20-%20%20Application%20Protection%20Report%20-%20Art%20of%20Securing%20Modern%20APIs%20[August%202021].pdf)
+  - video: <https://www.brighttalk.com/webcast/17570/511639>
 
 **_June_**
 
