@@ -69,7 +69,7 @@ Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current pos
       <description>SSL Orchestrator The following document accompanies the SSL Orchestrator Lab.
 Author: F5
 Presenter: Shain Singh
- SSL Orchestrator 8.2 Lab Guide - supplement to instructor-led lab  DevSecOps Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament). Dockerfile for DevSecOps pipeline demo can be found here: https://github.com/F5-use-cases/f5-rs-container
+ SSL Orchestrator 9.1 Lab Guide - supplement to instructor-led lab  DevSecOps Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament). Dockerfile for DevSecOps pipeline demo can be found here: https://github.com/F5-use-cases/f5-rs-container
 Author: F5
 Presenter: Shain Singh
  Security in a Agile/DevOps environment DevSecOps Demo with Jenkins  DDoS The following documents are recommendations from F5 around how best to prepare and mitigate against DDoS attacks.</description>

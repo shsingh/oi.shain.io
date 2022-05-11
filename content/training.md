@@ -15,7 +15,7 @@ The following document accompanies the SSL Orchestrator Lab.
 
 **Presenter:** [Shain Singh](https://shain.io/)
 
-- [SSL Orchestrator 8.2 Lab Guide - supplement to instructor-led lab](/files/SSL%20Orchestrator%208.2%20Lab%20Guide%20-%20UDF3%20v1.pdf)
+- [SSL Orchestrator 9.1 Lab Guide - supplement to instructor-led lab](/files/SSL%20Orchestrator%209.1%20Lab%20Guide%20-%20UDF3%20v1.pdf)
 
 <hr />
 
