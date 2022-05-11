@@ -66,7 +66,7 @@ Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current pos
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://oi.shain.io/training/</guid>
-      <description>SSL Orchestrator The following document accompanies the SSL Orchestrator Lab.
+      <description>SSL Orchestrator  The following document accompanies the SSL Orchestrator Lab.
 Author: F5
 Presenter: Shain Singh
  SSL Orchestrator 9.1 Lab Guide - supplement to instructor-led lab  DevSecOps Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament). Dockerfile for DevSecOps pipeline demo can be found here: https://github.com/F5-use-cases/f5-rs-container
