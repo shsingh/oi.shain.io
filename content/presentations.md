@@ -9,6 +9,15 @@ author: Shain Singh
 
 #### 2022 {#2022}
 
+**_April_**
+
+- BrightTALK Webinar:
+  - slides: [Towards a Zero Trust Architecture](/files/Brighttalk%20Webinar%20-%20Towards%20a%20Zero%20Trust%20Architecture%20%5BApril%202022%5D.pdf)
+  - video: <https://www.brighttalk.com/webcast/17570/540251>
+
+<hr />
+
+
 **_March_**
 
 - Philippine Institute of Cybersecurity Professionals (PICSPro):
@@ -68,7 +77,7 @@ author: Shain Singh
 **_December_**
 
 - BrightTALK Summit:
-  - slides: [A Practical Lesson in Cloud Controls from Breach Analysis](/files/Brightalk%20Summit%20-%20A%20Practical%20Lesson%20in%20Cloud%20Controls%20from%20Breach%20Analysis%20[Dec%202020].pdf)
+  - slides: [A Practical Lesson in Cloud Controls from Breach Analysis](/files/Brighttalk%20Summit%20-%20A%20Practical%20Lesson%20in%20Cloud%20Controls%20from%20Breach%20Analysis%20[Dec%202020].pdf)
   - video: <https://www.brighttalk.com/webcast/17570/459606>
 
 **_July_**
