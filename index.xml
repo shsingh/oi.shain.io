@@ -9,11 +9,11 @@
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 30 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://oi.shain.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>$ containers on macos</title>
-      <link>https://oi.shain.io/thoughts/containers-on-macos/</link>
+      <title>$ linux on macos</title>
+      <link>https://oi.shain.io/thoughts/linux-on-macos/</link>
       <pubDate>Sat, 30 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://oi.shain.io/thoughts/containers-on-macos/</guid>
+      <guid>https://oi.shain.io/thoughts/linux-on-macos/</guid>
       <description>I bought my first Apple laptop in 2005 as I was keen to leverage native UNIX programs on x86 hardware. Since that time there have a number of packaging managers that I have used (Fink, Macports) to now settle on Homebrew for installing UNIX programs on my laptop.
 In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quote bloated.</description>
     </item>
