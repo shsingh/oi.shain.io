@@ -36,7 +36,7 @@ In recent years I have found that even with a package manager, software librarie
 <meta itemprop="name" content="$ linux on macos">
 <meta itemprop="description" content="I bought my first Apple laptop in 2005 as I was keen to leverage native UNIX programs on x86 hardware. Since that time there have a number of packaging managers that I have used (Fink, Macports) to now settle on Homebrew for installing UNIX programs on my laptop.
 In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quite bloated."><meta itemprop="datePublished" content="2022-07-30T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-07-30T16:24:45+10:00" />
+<meta itemprop="dateModified" content="2022-07-30T16:55:35+10:00" />
 <meta itemprop="wordCount" content="5218"><meta itemprop="image" content="https://oi.shain.io"/>
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
@@ -154,15 +154,15 @@ In recent years I have found that even with a package manager, software librarie
 <p>As containers are ephemeral, I make sure that any changes I make are regularly committed as a new image and pushed to a container registry. This ensures that the next &lsquo;pull&rsquo; of the image will contain the latest changes. Changes are not common and typically only related to additional software installed or updates done of packages.</p>
 <p>To first detach from a running container to do this, you need to use the Ctrl-P followed by Ctrl-Q key combination.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># docker ps</span>
+</span></span><span class="line"><span class="cl">$ docker ps
 </span></span><span class="line"><span class="cl">CONTAINER ID   IMAGE                    COMMAND        CREATED         STATUS         PORTS                                                           NAMES
 </span></span><span class="line"><span class="cl">986e8b60c680   74000c90faf3             <span class="s2">&#34;/bin/zsh&#34;</span>     <span class="m">7</span> minutes ago   Up <span class="m">7</span> minutes                                                                   kali-linux-docker-arm64
 </span></span><span class="line"><span class="cl">ba8229e8aa62   portainer/portainer-ce   <span class="s2">&#34;/portainer&#34;</span>   <span class="m">2</span> hours ago     Up <span class="m">2</span> hours     8000/tcp, 9443/tcp, 0.0.0.0:9000-&gt;9000/tcp, :::9000-&gt;9000/tcp   portainer
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># docker container commit kali-linux-docker-arm64 shsingh/kali-linux-docker-arm64:latest</span>
+</span></span><span class="line"><span class="cl">$ docker container commit kali-linux-docker-arm64 shsingh/kali-linux-docker-arm64:latest
 </span></span><span class="line"><span class="cl">sha256:efff31b12c4c2baebf22203a81bdcd5fbed322f2e605a371d08254be7e0324d7
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># docker push shsingh/kali-linux-docker-arm64:latest</span>
+</span></span><span class="line"><span class="cl">$ docker push shsingh/kali-linux-docker-arm64:latest
 </span></span><span class="line"><span class="cl">The push refers to repository <span class="o">[</span>docker.io/shsingh/kali-linux-docker-arm64<span class="o">]</span>
 </span></span><span class="line"><span class="cl">30f8ab718298: Pushed
 </span></span><span class="line"><span class="cl">7d4420eb69bf: Layer already exists
@@ -179,7 +179,7 @@ In recent years I have found that even with a package manager, software librarie
 <p>I may look into mounting a local file system from MacOS for use in the Kali Linux container. At this stage there is not much I need from the local filesystem and the information inside the container is fairly transient. I am also a bit cautious with mounting MacOS into other operating systems as I am a very heavy user of metadata and tagging. I had previously found that files with all my MacOS tags all got removed when I mounted them into another operating system as they are MacOS specific.</p>
 <p>Example of the metadata included with a file on MacOS:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#  mdls docker</span>
+</span></span><span class="line"><span class="cl">$  mdls docker
 </span></span><span class="line"><span class="cl"><span class="nv">_kMDItemDisplayNameWithExtensions</span>  <span class="o">=</span> <span class="s2">&#34;docker&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentCreationDate</span>         <span class="o">=</span> 2022-07-29 22:30:24 +0000
 </span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentCreationDate_Ranking</span> <span class="o">=</span> 2022-07-29 00:00:00 +0000
@@ -221,7 +221,7 @@ In recent years I have found that even with a package manager, software librarie
 <p>I&rsquo;ve been a user of Kali Linux and its predecessor Backtrack since 2006. Back then I primarily used Backtrack as a Live CD deployment and got used to the tools it included. Over the years Kali Linux has become more of a complete desktop operating system for daily use and is based on Debian. While there is a large list of Linux desktop systems for use, I have found Kali Linux suitable for my needs. If I ever had a need for a native graphical Linux environment then I&rsquo;d be quite comfortable with Kali Linux for that purpose. A major reason for this is that a large number of pentesting tools are very useful for diagnostics, troubleshooting and passive reconnaisance to get a better understanding of the applications and networks I work with.</p>
 <p>Kali Linux also provides <a href="https://www.kali.org/get-kali/#kali-containers" target="_blank" rel="noopener">slim Docker images</a> which can be used as the base.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># docker run --tty --interactive kalilinux/kali-rolling</span>
+</span></span><span class="line"><span class="cl">$ docker run --tty --interactive kalilinux/kali-rolling
 </span></span><span class="line"><span class="cl">Unable to find image <span class="s1">&#39;kalilinux/kali-rolling:latest&#39;</span> locally
 </span></span><span class="line"><span class="cl">latest: Pulling from kalilinux/kali-rolling
 </span></span><span class="line"><span class="cl">62c5da721989: Pull <span class="nb">complete</span>
@@ -231,7 +231,7 @@ In recent years I have found that even with a package manager, software librarie
 </span></span><span class="line"><span class="cl">└─#
 </span></span></code></pre></div><p>The base image does not install any tools and there are <a href="https://www.kali.org/docs/general-use/metapackages/" target="_blank" rel="noopener">metapackages</a> which can be used to install the tools needed. This allows me to install the &lsquo;kali-linux-headless&rsquo; metapackage which ensures no extra GUI or X11 packages are unnecessarily installed. While the number of packages installed is quite large, it is worth remembering that is to run a operating system inside the container and this would be a typical build in a standard VM or desktop environment.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># apt update; apt-get install kali-linux-headless</span>
+</span></span><span class="line"><span class="cl">$ apt update<span class="p">;</span> apt-get install kali-linux-headless
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Get:1 http://kali.download/kali kali-rolling InRelease <span class="o">[</span>30.6 kB<span class="o">]</span>
 </span></span><span class="line"><span class="cl">Get:2 http://kali.download/kali kali-rolling/contrib arm64 Packages <span class="o">[</span>93.0 kB<span class="o">]</span>
@@ -443,7 +443,7 @@ In recent years I have found that even with a package manager, software librarie
 <h2 id="multipass">Multipass</h2>
 <p>Multipass is installed as a <a href="https://github.com/Homebrew/homebrew-cask" target="_blank" rel="noopener">Cask</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># brew -v install multipass</span>
+</span></span><span class="line"><span class="cl">$ brew -v install <span class="nv">multipass</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Downloading https://github.com/canonical/multipass/releases/download/v1.10.1/multipass-1.10.1+mac-Darwin.pkg
@@ -498,28 +498,28 @@ In recent years I have found that even with a package manager, software librarie
 </span></span></code></pre></div><h2 id="docker">Docker</h2>
 <p>There is already a prebuilt alias for &lsquo;docker&rsquo; in Multipass, which will launch a new Linux VM.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># multipass launch docker</span>
+</span></span><span class="line"><span class="cl">$ multipass launch docker
 </span></span><span class="line"><span class="cl">Launched: docker
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># multipass list</span>
+</span></span><span class="line"><span class="cl">$ multipass list
 </span></span><span class="line"><span class="cl">Name                    State             IPv4             Image
 </span></span><span class="line"><span class="cl">docker                  Running           10.211.56.4      Ubuntu 22.04 LTS
 </span></span><span class="line"><span class="cl">                                          172.17.0.1
 </span></span></code></pre></div><p>Once Docker is installed you will need an alias for the &lsquo;docker&rsquo; command.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># multipass alias docker:docker</span>
+</span></span><span class="line"><span class="cl">$ multipass <span class="nb">alias</span> docker:docker
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># which -a docker</span>
+</span></span><span class="line"><span class="cl">$ which -a docker
 </span></span><span class="line"><span class="cl">/Users/shsingh/Library/Application Support/multipass/bin/docker
 </span></span><span class="line"><span class="cl">/Users/shsingh/Library/Application Support/multipass/bin/docker
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># docker ps</span>
+</span></span><span class="line"><span class="cl">$ docker ps
 </span></span><span class="line"><span class="cl">CONTAINER ID   IMAGE                    COMMAND        CREATED       STATUS       PORTS                                                           NAMES
 </span></span><span class="line"><span class="cl">ba8229e8aa62   portainer/portainer-ce   <span class="s2">&#34;/portainer&#34;</span>   <span class="m">2</span> hours ago   Up <span class="m">2</span> hours   8000/tcp, 9443/tcp, 0.0.0.0:9000-&gt;9000/tcp, :::9000-&gt;9000/tcp   portainer
 </span></span></code></pre></div><h2 id="linux-desktop-as-a-container">Linux desktop as a container</h2>
 <p>Once Docker is installed you have all the standard tooling available and you can then run any Linux operating system as a container.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># docker run --tty --interactive shsingh/kali-linux-docker-arm64 /bin/zsh</span>
+</span></span><span class="line"><span class="cl">$ docker run --tty --interactive shsingh/kali-linux-docker-arm64 /bin/zsh
 </span></span><span class="line"><span class="cl">Unable to find image <span class="s1">&#39;shsingh/kali-linux-docker-arm64:latest&#39;</span> locally
 </span></span><span class="line"><span class="cl">latest: Pulling from shsingh/kali-linux-docker-arm64
 </span></span><span class="line"><span class="cl">5282b35103b9: Pull <span class="nb">complete</span>
@@ -575,7 +575,7 @@ In recent years I have found that even with a package manager, software librarie
          
           
             
-              (Last updated: 2022-07-30 16:24 &#43;1000)
+              (Last updated: 2022-07-30 16:55 &#43;1000)
             
           
         
@@ -587,7 +587,7 @@ In recent years I have found that even with a package manager, software librarie
             <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
           </svg>
 
-          <a href="https://github.com/shsingh/oi.shain.io/commit/54b2a185b3c1e75c4839b4b2b58db7a717dc4cb2" target="_blank" rel="noopener">54b2a18</a>
+          <a href="https://github.com/shsingh/oi.shain.io/commit/cacdcecdc433aedd1c2c3e7941f98c48a37c7e0e" target="_blank" rel="noopener">cacdcec</a>
           @ 2022-07-30
         </p>
     </div>
