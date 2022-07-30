@@ -32,15 +32,15 @@ To first detach from a running container to do this, you need to use the Ctrl-P 
 
 ```Bash
 
-# docker ps
+$ docker ps
 CONTAINER ID   IMAGE                    COMMAND        CREATED         STATUS         PORTS                                                           NAMES
 986e8b60c680   74000c90faf3             "/bin/zsh"     7 minutes ago   Up 7 minutes                                                                   kali-linux-docker-arm64
 ba8229e8aa62   portainer/portainer-ce   "/portainer"   2 hours ago     Up 2 hours     8000/tcp, 9443/tcp, 0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   portainer
 
-# docker container commit kali-linux-docker-arm64 shsingh/kali-linux-docker-arm64:latest
+$ docker container commit kali-linux-docker-arm64 shsingh/kali-linux-docker-arm64:latest
 sha256:efff31b12c4c2baebf22203a81bdcd5fbed322f2e605a371d08254be7e0324d7
 
-# docker push shsingh/kali-linux-docker-arm64:latest
+$ docker push shsingh/kali-linux-docker-arm64:latest
 The push refers to repository [docker.io/shsingh/kali-linux-docker-arm64]
 30f8ab718298: Pushed
 7d4420eb69bf: Layer already exists
@@ -70,7 +70,7 @@ Example of the metadata included with a file on MacOS:
 
 ```Bash
 
-#  mdls docker
+$  mdls docker
 _kMDItemDisplayNameWithExtensions  = "docker"
 kMDItemContentCreationDate         = 2022-07-29 22:30:24 +0000
 kMDItemContentCreationDate_Ranking = 2022-07-29 00:00:00 +0000
@@ -121,7 +121,7 @@ Kali Linux also provides [slim Docker images](https://www.kali.org/get-kali/#kal
 
 ```Bash
 
-# docker run --tty --interactive kalilinux/kali-rolling
+$ docker run --tty --interactive kalilinux/kali-rolling
 Unable to find image 'kalilinux/kali-rolling:latest' locally
 latest: Pulling from kalilinux/kali-rolling
 62c5da721989: Pull complete
@@ -137,7 +137,7 @@ The base image does not install any tools and there are [metapackages](https://w
 
 ```Bash
 
-# apt update; apt-get install kali-linux-headless
+$ apt update; apt-get install kali-linux-headless
 
 Get:1 http://kali.download/kali kali-rolling InRelease [30.6 kB]
 Get:2 http://kali.download/kali kali-rolling/contrib arm64 Packages [93.0 kB]
@@ -368,7 +368,7 @@ Multipass is installed as a [Cask](https://github.com/Homebrew/homebrew-cask)
 
 ```Bash
 
-# brew -v install multipass
+$ brew -v install multipass
 
 
 ==> Downloading https://github.com/canonical/multipass/releases/download/v1.10.1/multipass-1.10.1+mac-Darwin.pkg
@@ -430,10 +430,10 @@ There is already a prebuilt alias for 'docker' in Multipass, which will launch a
 
 ```Bash
 
-# multipass launch docker
+$ multipass launch docker
 Launched: docker
 
-# multipass list
+$ multipass list
 Name                    State             IPv4             Image
 docker                  Running           10.211.56.4      Ubuntu 22.04 LTS
                                           172.17.0.1
@@ -444,13 +444,13 @@ Once Docker is installed you will need an alias for the 'docker' command.
 
 ```Bash
 
-# multipass alias docker:docker
+$ multipass alias docker:docker
 
-# which -a docker
+$ which -a docker
 /Users/shsingh/Library/Application Support/multipass/bin/docker
 /Users/shsingh/Library/Application Support/multipass/bin/docker
 
-# docker ps
+$ docker ps
 CONTAINER ID   IMAGE                    COMMAND        CREATED       STATUS       PORTS                                                           NAMES
 ba8229e8aa62   portainer/portainer-ce   "/portainer"   2 hours ago   Up 2 hours   8000/tcp, 9443/tcp, 0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   portainer
 
@@ -462,7 +462,7 @@ Once Docker is installed you have all the standard tooling available and you can
 
 ```Bash
 
-# docker run --tty --interactive shsingh/kali-linux-docker-arm64 /bin/zsh
+$ docker run --tty --interactive shsingh/kali-linux-docker-arm64 /bin/zsh
 Unable to find image 'shsingh/kali-linux-docker-arm64:latest' locally
 latest: Pulling from shsingh/kali-linux-docker-arm64
 5282b35103b9: Pull complete
