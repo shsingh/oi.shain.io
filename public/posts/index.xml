@@ -37,14 +37,17 @@ In recent years I have found that even with a package manager, software librarie
 <p>To first detach from a running container to do this, you need to use the Ctrl-P followed by Ctrl-Q key combination.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ docker ps
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">CONTAINER ID   IMAGE                    COMMAND        CREATED         STATUS         PORTS                                                           NAMES
 </span></span><span class="line"><span class="cl">986e8b60c680   74000c90faf3             <span class="s2">&#34;/bin/zsh&#34;</span>     <span class="m">7</span> minutes ago   Up <span class="m">7</span> minutes                                                                   kali-linux-docker-arm64
 </span></span><span class="line"><span class="cl">ba8229e8aa62   portainer/portainer-ce   <span class="s2">&#34;/portainer&#34;</span>   <span class="m">2</span> hours ago     Up <span class="m">2</span> hours     8000/tcp, 9443/tcp, 0.0.0.0:9000-&gt;9000/tcp, :::9000-&gt;9000/tcp   portainer
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ docker container commit kali-linux-docker-arm64 shsingh/kali-linux-docker-arm64:latest
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sha256:efff31b12c4c2baebf22203a81bdcd5fbed322f2e605a371d08254be7e0324d7
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ docker push shsingh/kali-linux-docker-arm64:latest
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">The push refers to repository <span class="o">[</span>docker.io/shsingh/kali-linux-docker-arm64<span class="o">]</span>
 </span></span><span class="line"><span class="cl">30f8ab718298: Pushed
 </span></span><span class="line"><span class="cl">7d4420eb69bf: Layer already exists
@@ -61,7 +64,8 @@ In recent years I have found that even with a package manager, software librarie
 <p>I may look into mounting a local file system from MacOS for use in the Kali Linux container. At this stage there is not much I need from the local filesystem and the information inside the container is fairly transient. I am also a bit cautious with mounting MacOS into other operating systems as I am a very heavy user of metadata and tagging. I had previously found that files with all my MacOS tags all got removed when I mounted them into another operating system as they are MacOS specific.</p>
 <p>Example of the metadata included with a file on MacOS:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$  mdls docker
+</span></span><span class="line"><span class="cl">$ mdls docker
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">_kMDItemDisplayNameWithExtensions</span>  <span class="o">=</span> <span class="s2">&#34;docker&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentCreationDate</span>         <span class="o">=</span> 2022-07-29 22:30:24 +0000
 </span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentCreationDate_Ranking</span> <span class="o">=</span> 2022-07-29 00:00:00 +0000
@@ -104,6 +108,7 @@ In recent years I have found that even with a package manager, software librarie
 <p>Kali Linux also provides <a href="https://www.kali.org/get-kali/#kali-containers" target="_blank" rel="noopener">slim Docker images</a> which can be used as the base.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ docker run --tty --interactive kalilinux/kali-rolling
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Unable to find image <span class="s1">&#39;kalilinux/kali-rolling:latest&#39;</span> locally
 </span></span><span class="line"><span class="cl">latest: Pulling from kalilinux/kali-rolling
 </span></span><span class="line"><span class="cl">62c5da721989: Pull <span class="nb">complete</span>
@@ -320,13 +325,12 @@ In recent years I have found that even with a package manager, software librarie
 <h2 id="prerequisites">Prerequisites</h2>
 <p>If Homebrew is not currently installed on the laptop, then use the following script:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;</span>
+</span></span><span class="line"><span class="cl">$ /bin/bash -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&#34;</span>
 </span></span></code></pre></div><p>Further instructions are available at <a href="https://brew.sh" target="_blank" rel="noopener">the Homebrew site</a></p>
 <h2 id="multipass">Multipass</h2>
 <p>Multipass is installed as a <a href="https://github.com/Homebrew/homebrew-cask" target="_blank" rel="noopener">Cask</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ brew -v install <span class="nv">multipass</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Downloading https://github.com/canonical/multipass/releases/download/v1.10.1/multipass-1.10.1+mac-Darwin.pkg
 </span></span><span class="line"><span class="cl">Already downloaded: /Users/shsingh/Library/Caches/Homebrew/downloads/521aecca03103c46d7d9cd32bc600c97ed07b4c78b94d67cfa4e08562d920976--multipass-1.10.1+mac-Darwin.pkg
@@ -381,9 +385,11 @@ In recent years I have found that even with a package manager, software librarie
 <p>There is already a prebuilt alias for &lsquo;docker&rsquo; in Multipass, which will launch a new Linux VM.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ multipass launch docker
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Launched: docker
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ multipass list
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Name                    State             IPv4             Image
 </span></span><span class="line"><span class="cl">docker                  Running           10.211.56.4      Ubuntu 22.04 LTS
 </span></span><span class="line"><span class="cl">                                          172.17.0.1
@@ -392,16 +398,19 @@ In recent years I have found that even with a package manager, software librarie
 </span></span><span class="line"><span class="cl">$ multipass <span class="nb">alias</span> docker:docker
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ which -a docker
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">/Users/shsingh/Library/Application Support/multipass/bin/docker
 </span></span><span class="line"><span class="cl">/Users/shsingh/Library/Application Support/multipass/bin/docker
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ docker ps
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">CONTAINER ID   IMAGE                    COMMAND        CREATED       STATUS       PORTS                                                           NAMES
 </span></span><span class="line"><span class="cl">ba8229e8aa62   portainer/portainer-ce   <span class="s2">&#34;/portainer&#34;</span>   <span class="m">2</span> hours ago   Up <span class="m">2</span> hours   8000/tcp, 9443/tcp, 0.0.0.0:9000-&gt;9000/tcp, :::9000-&gt;9000/tcp   portainer
 </span></span></code></pre></div><h2 id="linux-desktop-as-a-container">Linux desktop as a container</h2>
 <p>Once Docker is installed you have all the standard tooling available and you can then run any Linux operating system as a container.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ docker run --tty --interactive shsingh/kali-linux-docker-arm64 /bin/zsh
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Unable to find image <span class="s1">&#39;shsingh/kali-linux-docker-arm64:latest&#39;</span> locally
 </span></span><span class="line"><span class="cl">latest: Pulling from shsingh/kali-linux-docker-arm64
 </span></span><span class="line"><span class="cl">5282b35103b9: Pull <span class="nb">complete</span>

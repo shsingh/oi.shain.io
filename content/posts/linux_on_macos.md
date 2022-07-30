@@ -33,14 +33,17 @@ To first detach from a running container to do this, you need to use the Ctrl-P 
 ```Bash
 
 $ docker ps
+
 CONTAINER ID   IMAGE                    COMMAND        CREATED         STATUS         PORTS                                                           NAMES
 986e8b60c680   74000c90faf3             "/bin/zsh"     7 minutes ago   Up 7 minutes                                                                   kali-linux-docker-arm64
 ba8229e8aa62   portainer/portainer-ce   "/portainer"   2 hours ago     Up 2 hours     8000/tcp, 9443/tcp, 0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   portainer
 
 $ docker container commit kali-linux-docker-arm64 shsingh/kali-linux-docker-arm64:latest
+
 sha256:efff31b12c4c2baebf22203a81bdcd5fbed322f2e605a371d08254be7e0324d7
 
 $ docker push shsingh/kali-linux-docker-arm64:latest
+
 The push refers to repository [docker.io/shsingh/kali-linux-docker-arm64]
 30f8ab718298: Pushed
 7d4420eb69bf: Layer already exists
@@ -48,7 +51,6 @@ The push refers to repository [docker.io/shsingh/kali-linux-docker-arm64]
 e495438ebf4d: Layer already exists
 b45e458bde96: Layer already exists
 latest: digest: sha256:98c2d327b74aa8652b6a76485f106068dfd97c02762b7da9341690b3c2eacf86 size: 1381
-
 
 ```
 
@@ -70,7 +72,8 @@ Example of the metadata included with a file on MacOS:
 
 ```Bash
 
-$  mdls docker
+$ mdls docker
+
 _kMDItemDisplayNameWithExtensions  = "docker"
 kMDItemContentCreationDate         = 2022-07-29 22:30:24 +0000
 kMDItemContentCreationDate_Ranking = 2022-07-29 00:00:00 +0000
@@ -108,7 +111,6 @@ kMDItemSupportFileType             = (
     MDSystemFile
 )
 
-
 ```
 
 I also haven't as yet played with creating cloud-init scripts to instantiate the Multipass images. I recently found an [extremely useful example](https://github.com/magnetikonline/macos-multipass-docker) that I may look into integrating into my setup.
@@ -122,6 +124,7 @@ Kali Linux also provides [slim Docker images](https://www.kali.org/get-kali/#kal
 ```Bash
 
 $ docker run --tty --interactive kalilinux/kali-rolling
+
 Unable to find image 'kalilinux/kali-rolling:latest' locally
 latest: Pulling from kalilinux/kali-rolling
 62c5da721989: Pull complete
@@ -129,7 +132,6 @@ Digest: sha256:7012433c7a6843bfc90e1c0ba695fa70b0c0401788a055c08635757fe2f23970
 Status: Downloaded newer image for kalilinux/kali-rolling:latest
 ┌──(root㉿8450debdf88a)-[/]
 └─#
-
 
 ```
 
@@ -339,7 +341,6 @@ Need to get 1349 MB of archives.
 After this operation, 5762 MB of additional disk space will be used.
 Do you want to continue? [Y/n]
 
-
 ```
 
 Installing all the tools takes under 10 mins on a reasonable Internet connection.
@@ -356,7 +357,7 @@ If Homebrew is not currently installed on the laptop, then use the following scr
 
 ```Bash
 
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ```
 
@@ -369,7 +370,6 @@ Multipass is installed as a [Cask](https://github.com/Homebrew/homebrew-cask)
 ```Bash
 
 $ brew -v install multipass
-
 
 ==> Downloading https://github.com/canonical/multipass/releases/download/v1.10.1/multipass-1.10.1+mac-Darwin.pkg
 Already downloaded: /Users/shsingh/Library/Caches/Homebrew/downloads/521aecca03103c46d7d9cd32bc600c97ed07b4c78b94d67cfa4e08562d920976--multipass-1.10.1+mac-Darwin.pkg
@@ -421,7 +421,6 @@ installer:PHASE:The software was successfully installed.
 installer: The install was successful.
 🍺  multipass was successfully installed!
 
-
 ```
 
 ## Docker
@@ -431,9 +430,11 @@ There is already a prebuilt alias for 'docker' in Multipass, which will launch a
 ```Bash
 
 $ multipass launch docker
+
 Launched: docker
 
 $ multipass list
+
 Name                    State             IPv4             Image
 docker                  Running           10.211.56.4      Ubuntu 22.04 LTS
                                           172.17.0.1
@@ -447,10 +448,12 @@ Once Docker is installed you will need an alias for the 'docker' command.
 $ multipass alias docker:docker
 
 $ which -a docker
+
 /Users/shsingh/Library/Application Support/multipass/bin/docker
 /Users/shsingh/Library/Application Support/multipass/bin/docker
 
 $ docker ps
+
 CONTAINER ID   IMAGE                    COMMAND        CREATED       STATUS       PORTS                                                           NAMES
 ba8229e8aa62   portainer/portainer-ce   "/portainer"   2 hours ago   Up 2 hours   8000/tcp, 9443/tcp, 0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   portainer
 
@@ -463,6 +466,7 @@ Once Docker is installed you have all the standard tooling available and you can
 ```Bash
 
 $ docker run --tty --interactive shsingh/kali-linux-docker-arm64 /bin/zsh
+
 Unable to find image 'shsingh/kali-linux-docker-arm64:latest' locally
 latest: Pulling from shsingh/kali-linux-docker-arm64
 5282b35103b9: Pull complete
