@@ -35,26 +35,16 @@ In recent years I have found that even with a package manager, software librarie
 
 <meta itemprop="name" content="$ linux on macos">
 <meta itemprop="description" content="I bought my first Apple laptop in 2005 as I was keen to leverage native UNIX programs on x86 hardware. Since that time there have a number of packaging managers that I have used (Fink, Macports) to now settle on Homebrew for installing UNIX programs on my laptop.
-<<<<<<< HEAD
 In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quite bloated."><meta itemprop="datePublished" content="2022-07-30T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-07-30T14:25:26+10:00" />
-<meta itemprop="wordCount" content="5206"><meta itemprop="image" content="https://oi.shain.io"/>
-=======
-In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quote bloated."><meta itemprop="datePublished" content="2022-07-30T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-07-30T14:25:26+10:00" />
-<meta itemprop="wordCount" content="5204"><meta itemprop="image" content="https://oi.shain.io"/>
->>>>>>> 1e1719cd504b57a41f205e6c86332a863ede38bb
+<meta itemprop="dateModified" content="2022-07-30T16:24:45+10:00" />
+<meta itemprop="wordCount" content="5218"><meta itemprop="image" content="https://oi.shain.io"/>
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://oi.shain.io"/>
 
 <meta name="twitter:title" content="$ linux on macos"/>
 <meta name="twitter:description" content="I bought my first Apple laptop in 2005 as I was keen to leverage native UNIX programs on x86 hardware. Since that time there have a number of packaging managers that I have used (Fink, Macports) to now settle on Homebrew for installing UNIX programs on my laptop.
-<<<<<<< HEAD
 In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quite bloated."/>
-=======
-In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quote bloated."/>
->>>>>>> 1e1719cd504b57a41f205e6c86332a863ede38bb
 
 
 
@@ -146,15 +136,9 @@ In recent years I have found that even with a package manager, software librarie
 
       <div class="post-content">
         <p>I bought my first Apple laptop in 2005 as I was keen to leverage native UNIX programs on x86 hardware. Since that time there have a number of packaging managers that I have used (<a href="https://www.finkproject.org" target="_blank" rel="noopener">Fink</a>, <a href="https://www.macports.org" target="_blank" rel="noopener">Macports</a>) to now settle on <a href="https://brew.sh" target="_blank" rel="noopener">Homebrew</a> for installing UNIX programs on my laptop.</p>
-<<<<<<< HEAD
 <p>In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quite bloated. While storage these days is relatively cheap, I have also started trying to do more with less in terms of laptop hardware resources.</p>
 <p>All of these things have brought me to a point where my primary laptop of choice is currently the Apple M1 Macbook Air (MBA). The form factor, size, weight mean it is perfect for travelling as well as working in the office.</p>
 <p>I recently made the decision to rely less on using Homebrew for installing software and start looking at whether I can just leverage a Linux VM instead. This led me to start looking into a Docker container that is a fully fledged Linux operating system. The initial issue with this is that you need a host Linux to run Docker in, which means using virtualisation software. In effect, you are using MacOS to first run a Linux VM using virtualisation technology and then run Docker inside that Linux VM.</p>
-=======
-<p>In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quote bloated. While storage is relatively cheap, I have also started trying to do more with less in terms of laptop hardware resources.</p>
-<p>All of these things have brought me to a point where my primary laptop of choice is currently the Apple M1 Macbook Air (MBA). The form factor, size, weight mean it is perfect for travelling as well as working in the office.</p>
-<p>I recently made the choice to rely less on using Homebrew for installing software and start looking at whether I can just leverage a Linux VM instead. This led me to start looking into a Docker container that is a fully fledged Linux operating system. The initial issue with this is that you need a host Linux to run Docker in, which means using virtualisation software. In effect, you are using MacOS to first run a Linux VM using virtualisation technology and then run Docker inside that Linux VM.</p>
->>>>>>> 1e1719cd504b57a41f205e6c86332a863ede38bb
 <p>The software that makes all this possible on my M1 MBA is <a href="https://multipass.run" target="_blank" rel="noopener">Multipass</a></p>
 <p><strong>Pros:</strong></p>
 <ul>
@@ -165,114 +149,8 @@ In recent years I have found that even with a package manager, software librarie
 <ul>
 <li>Container technology is built to be ephemeral and is not typically a good use case for a full operating system</li>
 </ul>
-<h1 id="installation">Installation</h1>
-<p>Being able to use Multipass on MacOS is extremely simple and this section is a list of steps that I used.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<p>If Homebrew is not currently installed on the laptop, then use the following script:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;</span>
-</span></span></code></pre></div><p>Further instructions are available at <a href="https://brew.sh" target="_blank" rel="noopener">the Homebrew site</a></p>
-<h2 id="multipass">Multipass</h2>
-<p>Multipass is installed as a <a href="https://github.com/Homebrew/homebrew-cask" target="_blank" rel="noopener">Cask</a></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># brew -v install multipass</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Downloading https://github.com/canonical/multipass/releases/download/v1.10.1/multipass-1.10.1+mac-Darwin.pkg
-</span></span><span class="line"><span class="cl">Already downloaded: /Users/shsingh/Library/Caches/Homebrew/downloads/521aecca03103c46d7d9cd32bc600c97ed07b4c78b94d67cfa4e08562d920976--multipass-1.10.1+mac-Darwin.pkg
-</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Verifying checksum <span class="k">for</span> cask <span class="s1">&#39;multipass&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Installing Cask multipass
-</span></span><span class="line"><span class="cl">cp -p /Users/shsingh/Library/Caches/Homebrew/downloads/521aecca03103c46d7d9cd32bc600c97ed07b4c78b94d67cfa4e08562d920976--multipass-1.10.1+mac-Darwin.pkg /opt/homebrew/Caskroom/multipass/1.10.1/multipass-1.10.1+mac-Darwin.pkg
-</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Running installer <span class="k">for</span> multipass<span class="p">;</span> your password may be necessary.
-</span></span><span class="line"><span class="cl">Package installers may write to any location<span class="p">;</span> options such as <span class="sb">`</span>--appdir<span class="sb">`</span> are ignored.
-</span></span><span class="line"><span class="cl">installer: Package name is multipass
-</span></span><span class="line"><span class="cl">installer: Installing at base path /
-</span></span><span class="line"><span class="cl">installer:PHASE:Preparing <span class="k">for</span> installation…
-</span></span><span class="line"><span class="cl">installer:PHASE:Preparing the disk…
-</span></span><span class="line"><span class="cl">installer:PHASE:Preparing multipass…
-</span></span><span class="line"><span class="cl">installer:PHASE:Waiting <span class="k">for</span> other installations to complete…
-</span></span><span class="line"><span class="cl">installer:PHASE:Configuring the installation…
-</span></span><span class="line"><span class="cl">installer:STATUS:
-</span></span><span class="line"><span class="cl">installer:%7.797427
-</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
-</span></span><span class="line"><span class="cl">installer:%13.491799
-</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
-</span></span><span class="line"><span class="cl">installer:%20.609764
-</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
-</span></span><span class="line"><span class="cl">installer:%27.727730
-</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
-</span></span><span class="line"><span class="cl">installer:%36.269288
-</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
-</span></span><span class="line"><span class="cl">installer:%41.963660
-</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
-</span></span><span class="line"><span class="cl">installer:%53.352404
-</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
-</span></span><span class="line"><span class="cl">installer:%91.903978
-</span></span><span class="line"><span class="cl">installer:PHASE:Registering updated components…
-</span></span><span class="line"><span class="cl">installer:%92.615220
-</span></span><span class="line"><span class="cl">installer:PHASE:Registering updated components…
-</span></span><span class="line"><span class="cl">installer:%93.327476
-</span></span><span class="line"><span class="cl">installer:PHASE:Registering updated components…
-</span></span><span class="line"><span class="cl">installer:%94.038851
-</span></span><span class="line"><span class="cl">installer:PHASE:Registering updated components…
-</span></span><span class="line"><span class="cl">installer:%94.751139
-</span></span><span class="line"><span class="cl">installer:PHASE:Registering updated components…
-</span></span><span class="line"><span class="cl">installer:PHASE:Validating packages…
-</span></span><span class="line"><span class="cl">installer:%97.750000
-</span></span><span class="line"><span class="cl">installer:STATUS:Running installer actions…
-</span></span><span class="line"><span class="cl">installer:STATUS:
-</span></span><span class="line"><span class="cl">installer:PHASE:Finishing the Installation…
-</span></span><span class="line"><span class="cl">installer:STATUS:
-</span></span><span class="line"><span class="cl">installer:%100.000000
-</span></span><span class="line"><span class="cl">installer:PHASE:The software was successfully installed.
-</span></span><span class="line"><span class="cl">installer: The install was successful.
-</span></span><span class="line"><span class="cl">🍺  multipass was successfully installed!
-</span></span></code></pre></div><h2 id="docker">Docker</h2>
-<p>There is already a prebuilt alias for &lsquo;docker&rsquo; in Multipass, which will launch a new Linux VM.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># multipass launch docker</span>
-</span></span><span class="line"><span class="cl">Launched: docker
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># multipass list</span>
-</span></span><span class="line"><span class="cl">Name                    State             IPv4             Image
-</span></span><span class="line"><span class="cl">docker                  Running           10.211.56.4      Ubuntu 22.04 LTS
-</span></span><span class="line"><span class="cl">                                          172.17.0.1
-</span></span></code></pre></div><p>Once Docker is installed you will need an alias for the &lsquo;docker&rsquo; command.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># multipass alias docker:docker</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># which -a docker</span>
-</span></span><span class="line"><span class="cl">/Users/shsingh/Library/Application Support/multipass/bin/docker
-</span></span><span class="line"><span class="cl">/Users/shsingh/Library/Application Support/multipass/bin/docker
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># docker ps</span>
-</span></span><span class="line"><span class="cl">CONTAINER ID   IMAGE                    COMMAND        CREATED       STATUS       PORTS                                                           NAMES
-</span></span><span class="line"><span class="cl">ba8229e8aa62   portainer/portainer-ce   <span class="s2">&#34;/portainer&#34;</span>   <span class="m">2</span> hours ago   Up <span class="m">2</span> hours   8000/tcp, 9443/tcp, 0.0.0.0:9000-&gt;9000/tcp, :::9000-&gt;9000/tcp   portainer
-</span></span></code></pre></div><h2 id="linux-desktop-as-a-container">Linux desktop as a container</h2>
-<p>Once Docker is installed you have all the standard tooling available and you can then run any Linux operating system as a container.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># docker run --tty --interactive shsingh/kali-linux-docker-arm64 /bin/zsh</span>
-</span></span><span class="line"><span class="cl">Unable to find image <span class="s1">&#39;shsingh/kali-linux-docker-arm64:latest&#39;</span> locally
-</span></span><span class="line"><span class="cl">latest: Pulling from shsingh/kali-linux-docker-arm64
-</span></span><span class="line"><span class="cl">5282b35103b9: Pull <span class="nb">complete</span>
-</span></span><span class="line"><span class="cl">1c931c2ad3fd: Pull <span class="nb">complete</span>
-</span></span><span class="line"><span class="cl">6267781a4897: Pull <span class="nb">complete</span>
-</span></span><span class="line"><span class="cl">acf0e86eb47b: Pull <span class="nb">complete</span>
-</span></span><span class="line"><span class="cl">Digest: sha256:49b8798fa8d91514602669445e36b2173a793b6da55bf8914a717e3b5c750a04
-</span></span><span class="line"><span class="cl">Status: Downloaded newer image <span class="k">for</span> shsingh/kali-linux-docker-arm64:latest
-</span></span><span class="line"><span class="cl"><span class="c1">###</span>
-</span></span><span class="line"><span class="cl">Q:      Minnesotans ask, <span class="s2">&#34;Why aren&#39;t there more pharmacists from Alabama?&#34;</span>
-</span></span><span class="line"><span class="cl">A:      Easy.  It<span class="s1">&#39;s because they can&#39;</span>t figure out how to get the little
-</span></span><span class="line"><span class="cl">        bottles into the typewriter.
-</span></span><span class="line"><span class="cl"><span class="c1">###</span>
-</span></span><span class="line"><span class="cl">Linux 986e8b60c680 5.15.0-41-generic <span class="c1">#44-Ubuntu SMP Thu Jun 23 11:20:13 UTC 2022 aarch64 GNU/Linux</span>
-</span></span><span class="line"><span class="cl"> 10:30:47 up  2:06,  <span class="m">0</span> users,  load average: 3.25, 1.70, 0.68
-</span></span><span class="line"><span class="cl"><span class="c1">###</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">/
-</span></span><span class="line"><span class="cl">⬢ <span class="o">[</span>Docker<span class="o">]</span> ❯ uname -a
-</span></span><span class="line"><span class="cl">Linux 986e8b60c680 5.15.0-41-generic <span class="c1">#44-Ubuntu SMP Thu Jun 23 11:20:13 UTC 2022 aarch64 GNU/Linux</span>
-</span></span></code></pre></div><h1 id="workflow">Workflow</h1>
+<p>Details on setting up the environment are provided <a href="#environment_setup">further down below</a>.</p>
+<h1 id="workflow">Workflow</h1>
 <p>As containers are ephemeral, I make sure that any changes I make are regularly committed as a new image and pushed to a container registry. This ensures that the next &lsquo;pull&rsquo; of the image will contain the latest changes. Changes are not common and typically only related to additional software installed or updates done of packages.</p>
 <p>To first detach from a running container to do this, you need to use the Ctrl-P followed by Ctrl-Q key combination.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
@@ -293,6 +171,52 @@ In recent years I have found that even with a package manager, software librarie
 </span></span><span class="line"><span class="cl">b45e458bde96: Layer already exists
 </span></span><span class="line"><span class="cl">latest: digest: sha256:98c2d327b74aa8652b6a76485f106068dfd97c02762b7da9341690b3c2eacf86 size: <span class="m">1381</span>
 </span></span></code></pre></div><h1 id="additional-thoughts">Additional Thoughts</h1>
+<h2 id="quirks-with-the-setup">Quirks with the setup</h2>
+<p>As of the writing of this post, I&rsquo;ve been using this setup and workflow without any significant issues. It is likely not a scenario others may find appealing for running Linux on Apple laptops, but as I mention above this fits my needs fine.</p>
+<p>The only thing I&rsquo;ve found to be an issue sometimes is terminal emulation quirks. My typical setup is to use <a href="https://iterm2.com/index.html" target="_blank" rel="noopener">iTerm2</a> with <a href="https://github.com/tmux/tmux/wiki" target="_blank" rel="noopener">tmux</a> and so attaching to the Docker container means I am using a console and not a login shell into Kali Linux. Software that has reliance on the terminal type (e.g. ncurses) can sometimes be a bit flaky. It doesn&rsquo;t cause me too much grief as I don&rsquo;t tend to use TUI based software too much.</p>
+<h2 id="things-to-look-into-at-some-stage">Things to look into at some stage</h2>
+<p>I&rsquo;m quite enamored with Multipass and will look to using this for <a href="https://microk8s.io" target="_blank" rel="noopener">MicroK8s</a> at some stage. The <a href="https://microk8s.io/docs/install-alternatives" target="_blank" rel="noopener">installation steps for MicroK8s</a> suggest it natively uses Multipass so that makes things easier. The choice of MicroK8s over other micro Kubernetes alternatives such as k0s or k3s for development use is something <a href="https://codecowboy.io/" target="_blank" rel="noopener">@codecowboy</a> covers in a <a href="https://codecowboy.io/kubernetes/" target="_blank" rel="noopener">series of posts</a>.</p>
+<p>I may look into mounting a local file system from MacOS for use in the Kali Linux container. At this stage there is not much I need from the local filesystem and the information inside the container is fairly transient. I am also a bit cautious with mounting MacOS into other operating systems as I am a very heavy user of metadata and tagging. I had previously found that files with all my MacOS tags all got removed when I mounted them into another operating system as they are MacOS specific.</p>
+<p>Example of the metadata included with a file on MacOS:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#  mdls docker</span>
+</span></span><span class="line"><span class="cl"><span class="nv">_kMDItemDisplayNameWithExtensions</span>  <span class="o">=</span> <span class="s2">&#34;docker&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentCreationDate</span>         <span class="o">=</span> 2022-07-29 22:30:24 +0000
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentCreationDate_Ranking</span> <span class="o">=</span> 2022-07-29 00:00:00 +0000
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentModificationDate</span>     <span class="o">=</span> 2022-07-29 22:30:24 +0000
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentType</span>                 <span class="o">=</span> <span class="s2">&#34;public.unix-executable&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentTypeTree</span>             <span class="o">=</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;public.unix-executable&#34;</span>,
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;public.data&#34;</span>,
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;public.item&#34;</span>,
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;public.executable&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemDateAdded</span>                   <span class="o">=</span> 2022-07-29 22:30:24 +0000
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemDisplayName</span>                 <span class="o">=</span> <span class="s2">&#34;docker&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemDocumentIdentifier</span>          <span class="o">=</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSContentChangeDate</span>         <span class="o">=</span> 2022-07-29 22:30:24 +0000
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSCreationDate</span>              <span class="o">=</span> 2022-07-29 22:30:24 +0000
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSCreatorCode</span>               <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSFinderFlags</span>               <span class="o">=</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSHasCustomIcon</span>             <span class="o">=</span> <span class="o">(</span>null<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSInvisible</span>                 <span class="o">=</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSIsExtensionHidden</span>         <span class="o">=</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSIsStationery</span>              <span class="o">=</span> <span class="o">(</span>null<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSLabel</span>                     <span class="o">=</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSName</span>                      <span class="o">=</span> <span class="s2">&#34;docker&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSNodeCount</span>                 <span class="o">=</span> <span class="o">(</span>null<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSOwnerGroupID</span>              <span class="o">=</span> <span class="m">20</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSOwnerUserID</span>               <span class="o">=</span> <span class="m">501</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSSize</span>                      <span class="o">=</span> <span class="m">97</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSTypeCode</span>                  <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemInterestingDate_Ranking</span>     <span class="o">=</span> 2022-07-29 00:00:00 +0000
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemKind</span>                        <span class="o">=</span> <span class="s2">&#34;Unix Executable File&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemLogicalSize</span>                 <span class="o">=</span> <span class="m">97</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemPhysicalSize</span>                <span class="o">=</span> <span class="m">4096</span>
+</span></span><span class="line"><span class="cl"><span class="nv">kMDItemSupportFileType</span>             <span class="o">=</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">    MDSystemFile
+</span></span><span class="line"><span class="cl"><span class="o">)</span>
+</span></span></code></pre></div><p>I also haven&rsquo;t as yet played with creating cloud-init scripts to instantiate the Multipass images. I recently found an <a href="https://github.com/magnetikonline/macos-multipass-docker" target="_blank" rel="noopener">extremely useful example</a> that I may look into integrating into my setup.</p>
 <h2 id="kali-linux-as-desktop-operation-system">Kali Linux as desktop operation system</h2>
 <p>I&rsquo;ve been a user of Kali Linux and its predecessor Backtrack since 2006. Back then I primarily used Backtrack as a Live CD deployment and got used to the tools it included. Over the years Kali Linux has become more of a complete desktop operating system for daily use and is based on Debian. While there is a large list of Linux desktop systems for use, I have found Kali Linux suitable for my needs. If I ever had a need for a native graphical Linux environment then I&rsquo;d be quite comfortable with Kali Linux for that purpose. A major reason for this is that a large number of pentesting tools are very useful for diagnostics, troubleshooting and passive reconnaisance to get a better understanding of the applications and networks I work with.</p>
 <p>Kali Linux also provides <a href="https://www.kali.org/get-kali/#kali-containers" target="_blank" rel="noopener">slim Docker images</a> which can be used as the base.</p>
@@ -509,53 +433,114 @@ In recent years I have found that even with a package manager, software librarie
 </span></span><span class="line"><span class="cl">After this operation, <span class="m">5762</span> MB of additional disk space will be used.
 </span></span><span class="line"><span class="cl">Do you want to <span class="k">continue</span>? <span class="o">[</span>Y/n<span class="o">]</span>
 </span></span></code></pre></div><p>Installing all the tools takes under 10 mins on a reasonable Internet connection.</p>
-<h2 id="quirks-with-the-setup">Quirks with the setup</h2>
-<p>As of the writing of this post, I&rsquo;ve been using this setup and workflow without any significant issues. It is likely not a scenario others may find appealing for running Linux on Apple laptops, but as I mention above this fits my needs fine.</p>
-<p>The only thing I&rsquo;ve found to be an issue sometimes is terminal emulation quirks. My typical setup is to use <a href="https://iterm2.com/index.html" target="_blank" rel="noopener">iTerm2</a> with <a href="https://github.com/tmux/tmux/wiki" target="_blank" rel="noopener">tmux</a> and so attaching to the Docker container means I am using a console and not a login shell into Kali Linux. Software that has reliance on the terminal type (e.g. ncurses) can sometimes be a bit flaky. It doesn&rsquo;t cause me too much grief as I don&rsquo;t tend to use TUI based software too much.</p>
-<h2 id="things-to-look-into-at-some-stage">Things to look into at some stage</h2>
-<p>I&rsquo;m quite enamored with Multipass and will look to using this for <a href="https://microk8s.io" target="_blank" rel="noopener">MicroK8s</a> at some stage. The <a href="https://microk8s.io/docs/install-alternatives" target="_blank" rel="noopener">installation steps for MicroK8s</a> suggest it natively uses Multipass so that makes things easier. The choice of MicroK8s over other micro Kubernetes alternatives such as k0s or k3s for development use is something <a href="https://codecowboy.io/" target="_blank" rel="noopener">@codecowboy</a> covers in a <a href="https://codecowboy.io/kubernetes/" target="_blank" rel="noopener">series of posts</a>.</p>
-<p>I may look into mounting a local file system from MacOS for use in the Kali Linux container. At this stage there is not much I need from the local filesystem and the information inside the container is fairly transient. I am also a bit cautious with mounting MacOS into other operating systems as I am a very heavy user of metadata and tagging. I had previously found that files with all my MacOS tags all got removed when I mounted them into another operating system as they are MacOS specific.</p>
-<p>Example of the metadata included with a file on MacOS:</p>
+<h1 id="environment_setup">Environment Setup</h1>
+<p>Being able to use Multipass on MacOS is extremely simple and this section is a list of steps that I used.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>If Homebrew is not currently installed on the laptop, then use the following script:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#  mdls docker</span>
-</span></span><span class="line"><span class="cl"><span class="nv">_kMDItemDisplayNameWithExtensions</span>  <span class="o">=</span> <span class="s2">&#34;docker&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentCreationDate</span>         <span class="o">=</span> 2022-07-29 22:30:24 +0000
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentCreationDate_Ranking</span> <span class="o">=</span> 2022-07-29 00:00:00 +0000
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentModificationDate</span>     <span class="o">=</span> 2022-07-29 22:30:24 +0000
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentType</span>                 <span class="o">=</span> <span class="s2">&#34;public.unix-executable&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemContentTypeTree</span>             <span class="o">=</span> <span class="o">(</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;public.unix-executable&#34;</span>,
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;public.data&#34;</span>,
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;public.item&#34;</span>,
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;public.executable&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemDateAdded</span>                   <span class="o">=</span> 2022-07-29 22:30:24 +0000
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemDisplayName</span>                 <span class="o">=</span> <span class="s2">&#34;docker&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemDocumentIdentifier</span>          <span class="o">=</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSContentChangeDate</span>         <span class="o">=</span> 2022-07-29 22:30:24 +0000
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSCreationDate</span>              <span class="o">=</span> 2022-07-29 22:30:24 +0000
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSCreatorCode</span>               <span class="o">=</span> <span class="s2">&#34;&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSFinderFlags</span>               <span class="o">=</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSHasCustomIcon</span>             <span class="o">=</span> <span class="o">(</span>null<span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSInvisible</span>                 <span class="o">=</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSIsExtensionHidden</span>         <span class="o">=</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSIsStationery</span>              <span class="o">=</span> <span class="o">(</span>null<span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSLabel</span>                     <span class="o">=</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSName</span>                      <span class="o">=</span> <span class="s2">&#34;docker&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSNodeCount</span>                 <span class="o">=</span> <span class="o">(</span>null<span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSOwnerGroupID</span>              <span class="o">=</span> <span class="m">20</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSOwnerUserID</span>               <span class="o">=</span> <span class="m">501</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSSize</span>                      <span class="o">=</span> <span class="m">97</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemFSTypeCode</span>                  <span class="o">=</span> <span class="s2">&#34;&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemInterestingDate_Ranking</span>     <span class="o">=</span> 2022-07-29 00:00:00 +0000
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemKind</span>                        <span class="o">=</span> <span class="s2">&#34;Unix Executable File&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemLogicalSize</span>                 <span class="o">=</span> <span class="m">97</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemPhysicalSize</span>                <span class="o">=</span> <span class="m">4096</span>
-</span></span><span class="line"><span class="cl"><span class="nv">kMDItemSupportFileType</span>             <span class="o">=</span> <span class="o">(</span>
-</span></span><span class="line"><span class="cl">    MDSystemFile
-</span></span><span class="line"><span class="cl"><span class="o">)</span>
-</span></span></code></pre></div><p>I also haven&rsquo;t as yet played with creating cloud-init scripts to instantiate the Multipass images. I recently found an <a href="https://github.com/magnetikonline/macos-multipass-docker" target="_blank" rel="noopener">extremely useful example</a> that I may look into integrating into my setup.</p>
-
+</span></span><span class="line"><span class="cl"><span class="c1"># /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;</span>
+</span></span></code></pre></div><p>Further instructions are available at <a href="https://brew.sh" target="_blank" rel="noopener">the Homebrew site</a></p>
+<h2 id="multipass">Multipass</h2>
+<p>Multipass is installed as a <a href="https://github.com/Homebrew/homebrew-cask" target="_blank" rel="noopener">Cask</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># brew -v install multipass</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Downloading https://github.com/canonical/multipass/releases/download/v1.10.1/multipass-1.10.1+mac-Darwin.pkg
+</span></span><span class="line"><span class="cl">Already downloaded: /Users/shsingh/Library/Caches/Homebrew/downloads/521aecca03103c46d7d9cd32bc600c97ed07b4c78b94d67cfa4e08562d920976--multipass-1.10.1+mac-Darwin.pkg
+</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Verifying checksum <span class="k">for</span> cask <span class="s1">&#39;multipass&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Installing Cask multipass
+</span></span><span class="line"><span class="cl">cp -p /Users/shsingh/Library/Caches/Homebrew/downloads/521aecca03103c46d7d9cd32bc600c97ed07b4c78b94d67cfa4e08562d920976--multipass-1.10.1+mac-Darwin.pkg /opt/homebrew/Caskroom/multipass/1.10.1/multipass-1.10.1+mac-Darwin.pkg
+</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Running installer <span class="k">for</span> multipass<span class="p">;</span> your password may be necessary.
+</span></span><span class="line"><span class="cl">Package installers may write to any location<span class="p">;</span> options such as <span class="sb">`</span>--appdir<span class="sb">`</span> are ignored.
+</span></span><span class="line"><span class="cl">installer: Package name is multipass
+</span></span><span class="line"><span class="cl">installer: Installing at base path /
+</span></span><span class="line"><span class="cl">installer:PHASE:Preparing <span class="k">for</span> installation…
+</span></span><span class="line"><span class="cl">installer:PHASE:Preparing the disk…
+</span></span><span class="line"><span class="cl">installer:PHASE:Preparing multipass…
+</span></span><span class="line"><span class="cl">installer:PHASE:Waiting <span class="k">for</span> other installations to complete…
+</span></span><span class="line"><span class="cl">installer:PHASE:Configuring the installation…
+</span></span><span class="line"><span class="cl">installer:STATUS:
+</span></span><span class="line"><span class="cl">installer:%7.797427
+</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
+</span></span><span class="line"><span class="cl">installer:%13.491799
+</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
+</span></span><span class="line"><span class="cl">installer:%20.609764
+</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
+</span></span><span class="line"><span class="cl">installer:%27.727730
+</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
+</span></span><span class="line"><span class="cl">installer:%36.269288
+</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
+</span></span><span class="line"><span class="cl">installer:%41.963660
+</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
+</span></span><span class="line"><span class="cl">installer:%53.352404
+</span></span><span class="line"><span class="cl">installer:PHASE:Writing files…
+</span></span><span class="line"><span class="cl">installer:%91.903978
+</span></span><span class="line"><span class="cl">installer:PHASE:Registering updated components…
+</span></span><span class="line"><span class="cl">installer:%92.615220
+</span></span><span class="line"><span class="cl">installer:PHASE:Registering updated components…
+</span></span><span class="line"><span class="cl">installer:%93.327476
+</span></span><span class="line"><span class="cl">installer:PHASE:Registering updated components…
+</span></span><span class="line"><span class="cl">installer:%94.038851
+</span></span><span class="line"><span class="cl">installer:PHASE:Registering updated components…
+</span></span><span class="line"><span class="cl">installer:%94.751139
+</span></span><span class="line"><span class="cl">installer:PHASE:Registering updated components…
+</span></span><span class="line"><span class="cl">installer:PHASE:Validating packages…
+</span></span><span class="line"><span class="cl">installer:%97.750000
+</span></span><span class="line"><span class="cl">installer:STATUS:Running installer actions…
+</span></span><span class="line"><span class="cl">installer:STATUS:
+</span></span><span class="line"><span class="cl">installer:PHASE:Finishing the Installation…
+</span></span><span class="line"><span class="cl">installer:STATUS:
+</span></span><span class="line"><span class="cl">installer:%100.000000
+</span></span><span class="line"><span class="cl">installer:PHASE:The software was successfully installed.
+</span></span><span class="line"><span class="cl">installer: The install was successful.
+</span></span><span class="line"><span class="cl">🍺  multipass was successfully installed!
+</span></span></code></pre></div><h2 id="docker">Docker</h2>
+<p>There is already a prebuilt alias for &lsquo;docker&rsquo; in Multipass, which will launch a new Linux VM.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># multipass launch docker</span>
+</span></span><span class="line"><span class="cl">Launched: docker
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># multipass list</span>
+</span></span><span class="line"><span class="cl">Name                    State             IPv4             Image
+</span></span><span class="line"><span class="cl">docker                  Running           10.211.56.4      Ubuntu 22.04 LTS
+</span></span><span class="line"><span class="cl">                                          172.17.0.1
+</span></span></code></pre></div><p>Once Docker is installed you will need an alias for the &lsquo;docker&rsquo; command.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># multipass alias docker:docker</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># which -a docker</span>
+</span></span><span class="line"><span class="cl">/Users/shsingh/Library/Application Support/multipass/bin/docker
+</span></span><span class="line"><span class="cl">/Users/shsingh/Library/Application Support/multipass/bin/docker
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># docker ps</span>
+</span></span><span class="line"><span class="cl">CONTAINER ID   IMAGE                    COMMAND        CREATED       STATUS       PORTS                                                           NAMES
+</span></span><span class="line"><span class="cl">ba8229e8aa62   portainer/portainer-ce   <span class="s2">&#34;/portainer&#34;</span>   <span class="m">2</span> hours ago   Up <span class="m">2</span> hours   8000/tcp, 9443/tcp, 0.0.0.0:9000-&gt;9000/tcp, :::9000-&gt;9000/tcp   portainer
+</span></span></code></pre></div><h2 id="linux-desktop-as-a-container">Linux desktop as a container</h2>
+<p>Once Docker is installed you have all the standard tooling available and you can then run any Linux operating system as a container.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># docker run --tty --interactive shsingh/kali-linux-docker-arm64 /bin/zsh</span>
+</span></span><span class="line"><span class="cl">Unable to find image <span class="s1">&#39;shsingh/kali-linux-docker-arm64:latest&#39;</span> locally
+</span></span><span class="line"><span class="cl">latest: Pulling from shsingh/kali-linux-docker-arm64
+</span></span><span class="line"><span class="cl">5282b35103b9: Pull <span class="nb">complete</span>
+</span></span><span class="line"><span class="cl">1c931c2ad3fd: Pull <span class="nb">complete</span>
+</span></span><span class="line"><span class="cl">6267781a4897: Pull <span class="nb">complete</span>
+</span></span><span class="line"><span class="cl">acf0e86eb47b: Pull <span class="nb">complete</span>
+</span></span><span class="line"><span class="cl">Digest: sha256:49b8798fa8d91514602669445e36b2173a793b6da55bf8914a717e3b5c750a04
+</span></span><span class="line"><span class="cl">Status: Downloaded newer image <span class="k">for</span> shsingh/kali-linux-docker-arm64:latest
+</span></span><span class="line"><span class="cl"><span class="c1">###</span>
+</span></span><span class="line"><span class="cl">Q:      Minnesotans ask, <span class="s2">&#34;Why aren&#39;t there more pharmacists from Alabama?&#34;</span>
+</span></span><span class="line"><span class="cl">A:      Easy.  It<span class="s1">&#39;s because they can&#39;</span>t figure out how to get the little
+</span></span><span class="line"><span class="cl">        bottles into the typewriter.
+</span></span><span class="line"><span class="cl"><span class="c1">###</span>
+</span></span><span class="line"><span class="cl">Linux 986e8b60c680 5.15.0-41-generic <span class="c1">#44-Ubuntu SMP Thu Jun 23 11:20:13 UTC 2022 aarch64 GNU/Linux</span>
+</span></span><span class="line"><span class="cl"> 10:30:47 up  2:06,  <span class="m">0</span> users,  load average: 3.25, 1.70, 0.68
+</span></span><span class="line"><span class="cl"><span class="c1">###</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">/
+</span></span><span class="line"><span class="cl">⬢ <span class="o">[</span>Docker<span class="o">]</span> ❯ uname -a
+</span></span><span class="line"><span class="cl">Linux 986e8b60c680 5.15.0-41-generic <span class="c1">#44-Ubuntu SMP Thu Jun 23 11:20:13 UTC 2022 aarch64 GNU/Linux</span>
+</span></span></code></pre></div>
       </div>
     </article>
 
@@ -573,11 +558,7 @@ In recent years I have found that even with a package manager, software librarie
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-<<<<<<< HEAD
-        5206 Words
-=======
-        5204 Words
->>>>>>> 1e1719cd504b57a41f205e6c86332a863ede38bb
+        5218 Words
       </p>
 
       <p>
@@ -594,7 +575,7 @@ In recent years I have found that even with a package manager, software librarie
          
           
             
-              (Last updated: 2022-07-30 14:25 &#43;1000)
+              (Last updated: 2022-07-30 16:24 &#43;1000)
             
           
         
@@ -606,7 +587,7 @@ In recent years I have found that even with a package manager, software librarie
             <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
           </svg>
 
-          <a href="https://github.com/shsingh/oi.shain.io/commit/eb87c391d93010a1282551cafbbd7dc3cffe5780" target="_blank" rel="noopener">eb87c39</a>
+          <a href="https://github.com/shsingh/oi.shain.io/commit/54b2a185b3c1e75c4839b4b2b58db7a717dc4cb2" target="_blank" rel="noopener">54b2a18</a>
           @ 2022-07-30
         </p>
     </div>
