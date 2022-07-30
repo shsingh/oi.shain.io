@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://oi.shain.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://oi.shain.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>$ linux on macos</title>
+      <link>https://oi.shain.io/thoughts/linux-on-macos/</link>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://oi.shain.io/thoughts/linux-on-macos/</guid>
+      <description>I bought my first Apple laptop in 2005 as I was keen to leverage native UNIX programs on x86 hardware. Since that time there have a number of packaging managers that I have used (Fink, Macports) to now settle on Homebrew for installing UNIX programs on my laptop.
+In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quote bloated.</description>
+    </item>
+    
     <item>
       <title>Presentations</title>
       <link>https://oi.shain.io/presentations/</link>
@@ -15,10 +25,12 @@
       
       <guid>https://oi.shain.io/presentations/</guid>
       <description>2022 April
- BrightTALK Webinar:  slides: Towards a Zero Trust Architecture video: https://www.brighttalk.com/webcast/17570/540251    March
- Philippine Institute of Cybersecurity Professionals (PICSPro):  slides: Insights from 2022 Application Protection Report video: https://www.facebook.com/PICSProfessionals/videos/685974415881142    2021 November
-  Australian Information Security Association (AISA) - Australian Cyber Conference 2021:
- slides: 5G Security - What it means for Service Providers and their customers    BrightTALK Webinar:</description>
+BrightTALK Webinar: slides: Towards a Zero Trust Architecture video: https://www.brighttalk.com/webcast/17570/540251 March
+Philippine Institute of Cybersecurity Professionals (PICSPro): slides: Insights from 2022 Application Protection Report video: https://www.facebook.com/PICSProfessionals/videos/685974415881142 2021 November
+Australian Information Security Association (AISA) - Australian Cyber Conference 2021:
+slides: 5G Security - What it means for Service Providers and their customers BrightTALK Webinar:
+slides: Leveraging Cloud-Native Operations to Build Edge-as-a-Service video: https://www.brighttalk.com/webcast/17570/514257 October
+BrightTALK Webinar: slides: Effective DevSecOps - How to Integrate Security into Pipelines video: https://www.</description>
     </item>
     
     <item>
@@ -65,13 +77,13 @@ Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current pos
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://oi.shain.io/training/</guid>
-      <description>SSL Orchestrator  The following document accompanies the SSL Orchestrator Lab.
+      <description>SSL Orchestrator The following document accompanies the SSL Orchestrator Lab.
 Author: F5
 Presenter: Shain Singh
- SSL Orchestrator 9.1 Lab Guide - supplement to instructor-led lab  DevSecOps Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament). Dockerfile for DevSecOps pipeline demo can be found here: https://github.com/F5-use-cases/f5-rs-container
+SSL Orchestrator 9.1 Lab Guide - supplement to instructor-led lab DevSecOps Presentation given to F5 Networks partners as part of a Security workshop (including a Capture The Flag tournament). Dockerfile for DevSecOps pipeline demo can be found here: https://github.com/F5-use-cases/f5-rs-container
 Author: F5
 Presenter: Shain Singh
- Security in a Agile/DevOps environment DevSecOps Demo with Jenkins  DDoS The following documents are recommendations from F5 around how best to prepare and mitigate against DDoS attacks.</description>
+Security in a Agile/DevOps environment DevSecOps Demo with Jenkins DDoS The following documents are recommendations from F5 around how best to prepare and mitigate against DDoS attacks.</description>
     </item>
     
     <item>
@@ -81,10 +93,10 @@ Presenter: Shain Singh
       
       <guid>https://oi.shain.io/about/</guid>
       <description>$ POST /about?definition=blog पुरुषार्थ (puruṣārtha)- the Hindu belief that there are four goals or objectives for human existence.
- Kāma: sensory pleasure Artha: material prosperity Dharma: moral righteousness Mokṣa: spiritual liberation  My aim will be to cover materials painted in the colours of the four goals of puruṣārtha.
+Kāma: sensory pleasure Artha: material prosperity Dharma: moral righteousness Mokṣa: spiritual liberation My aim will be to cover materials painted in the colours of the four goals of puruṣārtha.
 Enjoy your visit.
 नमस्ते (Namaste)
-$ GET /info?id=shsingh  Bio I know stuff about things, or things about stuff&amp;hellip; At least I try to.</description>
+$ GET /info?id=shsingh Bio I know stuff about things, or things about stuff&amp;hellip; At least I try to.</description>
     </item>
     
     <item>
