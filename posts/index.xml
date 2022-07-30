@@ -8,12 +8,12 @@
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 30 Jul 2022 00:00:00 +0000</lastBuildDate>
         <atom:link href="https://oi.shain.io/posts/index.xml" rel="self" type="application/rss+xml" />
-        
+
         <item>
             <title>$ linux on macos</title>
             <link>https://oi.shain.io/thoughts/linux-on-macos/</link>
             <pubDate>Sat, 30 Jul 2022 00:00:00 +0000</pubDate>
-            
+
             <guid>https://oi.shain.io/thoughts/linux-on-macos/</guid>
             <description>I bought my first Apple laptop in 2005 as I was keen to leverage native UNIX programs on x86 hardware. Since that time there have a number of packaging managers that I have used (Fink, Macports) to now settle on Homebrew for installing UNIX programs on my laptop.
 In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quite bloated.</description>
@@ -423,12 +423,12 @@ In recent years I have found that even with a package manager, software librarie
 </span></span></code></pre></div><p>I also haven&rsquo;t as yet played with creating cloud-init scripts to instantiate the Multipass images. I recently found an <a href="https://github.com/magnetikonline/macos-multipass-docker" target="_blank" rel="noopener">extremely useful example</a> that I may look into integrating into my setup.</p>
 ]]></content>
         </item>
-        
+
         <item>
             <title>$ the three most important api specs i see at work</title>
             <link>https://oi.shain.io/thoughts/the-three-most-important-api-specs-i-see-at-work/</link>
             <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
-            
+
             <guid>https://oi.shain.io/thoughts/the-three-most-important-api-specs-i-see-at-work/</guid>
             <description>One of the most rewarding things about my role at F5 is that it involves talking to customers about their digital transformation initiatives. The benefit of working for a company that provides a gateway, web application and API protection and fraud/automated threat defence means that my conversations and workshops are never boring!
 Through my customers I have learnt about how APIs have become a critical piece of infrastructure. My real sense of satisfaction comes not only when I help them plug any security gaps they may have, but when I combine with my partner-in-crime Shahnawaz Backer to provide them with threat data and insights (something they don&amp;rsquo;t need to wait to read in front page news).</description>
@@ -445,12 +445,12 @@ The benefit of working for a company that provides a <a href="https://www.nginx.
 <p>The above standards are the most impactful API specifications I work with day to day with customers given their potential reach, but they are not the only APIs in use. We rely more on APIs every day, sometimes without being aware, from your &lsquo;kubectl&rsquo; command to interact with your Kubernetes cluster, to your &lsquo;aws&rsquo; command-line tool to interface with your public cloud infrastructure. What we do lose sight of sometimes is that all these interactions need inspection, security and management, as it is highly likely that their use extends beyond the organisation itself to third parties and external entities - beyond the protection of IP address and location-based restrictions. </p>
 ]]></content>
         </item>
-        
+
         <item>
             <title>$ my life through sound</title>
             <link>https://oi.shain.io/thoughts/my-life-through-sound/</link>
             <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-            
+
             <guid>https://oi.shain.io/thoughts/my-life-through-sound/</guid>
             <description>&amp;ldquo;Sound&amp;rdquo; as the word &amp;ldquo;music&amp;rdquo; attaches a personal taste, a subjective view, a reason to judge. Throughout my life songs have been able to put me back into a place, a time. I am not alone when I say that I can resort to music during my happiest, darkest or most sombre moments. My love for music has seen me keep vinyl/cassette collections, which turned into CD collections, which moved to iTunes mp3 playlists and now a curated streaming collection.</description>
             <content type="html"><![CDATA[<p>&ldquo;Sound&rdquo; as the word &ldquo;music&rdquo; attaches a personal taste, a subjective view, a reason to judge. Throughout my life songs have been able to put me back into a place, a time. I am not alone when I say that I can resort to music during my happiest, darkest or most sombre moments. My love for music has seen me keep vinyl/cassette collections, which turned into CD collections, which moved to iTunes mp3 playlists and now a curated streaming collection. Roll with the times I guess. The playlists I have curated on Spotify are grouped into <a href="#phases">phases</a> and <a href="#moods">moods</a>. It should be pretty self explanatory, but one section is grouped into periods of my life while the other is for a distinct feeling. Curating this list has been an interesting endevaour in that there are songs which I would not call my “favourite” or something I “like”, but can be typical of the period it represents and is not something I will skip these days when it starts playing (differentiating it from songs which remind me of a period but I will still always skip - which are not on my lists). Feel free to listen if you’re interested knowing that each track is special to me in some way - whether evoking a memory or tickling my aural senses to bop my head, dance, grind, headbang, whatever&hellip;</p>
@@ -490,12 +490,12 @@ The benefit of working for a company that provides a <a href="https://www.nginx.
 
 ]]></content>
         </item>
-        
+
         <item>
             <title>$ thoughts on zoom</title>
             <link>https://oi.shain.io/thoughts/thoughts-on-zoom/</link>
             <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
-            
+
             <guid>https://oi.shain.io/thoughts/thoughts-on-zoom/</guid>
             <description>The past few months have placed immense demand on remote working and particularly video-conferencing tools. This has placed greater scrutiny on the security practices of companies like Zoom which has received a great deal of press - resulting in better transparency and a commitment to its users for improving its controls.
 Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current posture and response got me thinking - in particular, the following aspects were of interest to me:</description>
@@ -527,30 +527,30 @@ Putting opinions and conjecture aside for a moment, Zoom&amp;rsquo;s current pos
 <p>I will certainly be keeping a close watch on the 90-day plan that Zoom has outlined.  In particular I will look to seeing whether there are practices that they will be undertaking that I need to take into account myself (in terms of choice of software for personal use) as well as in conversations with my customers and partners (when discussing security aspects of their migration to public cloud and cloud-based services).</p>
 ]]></content>
         </item>
-        
+
         <item>
             <title>$ init</title>
             <link>https://oi.shain.io/thoughts/init/</link>
             <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-            
+
             <guid>https://oi.shain.io/thoughts/init/</guid>
             <description>A new tech blog sees the light of day. As if there weren’t enough of them already&amp;hellip;.</description>
             <content type="html"><![CDATA[<p>A new tech blog sees the light of day. As if there weren’t enough of them already&hellip;.</p>
 ]]></content>
         </item>
-        
+
         <item>
             <title>$ research</title>
             <link>https://oi.shain.io/thoughts/research/</link>
             <pubDate>Mon, 16 Aug 2010 00:00:00 +0000</pubDate>
-            
+
             <guid>https://oi.shain.io/thoughts/research/</guid>
             <description>&amp;#34;Give me six hours to chop down a tree and I will spend the first four sharpening the axe&amp;#34; - Abraham Lincoln I am still learning how exactly to use this medium to write. The lack of content for a while is not indicative of an absence of posts to publish, rather a “getting to know one’s surrounds”.</description>
-            <content type="html"><![CDATA[<pre tabindex="0"><code>&#34;Give me six hours to chop down a tree and I will spend the first four 
+            <content type="html"><![CDATA[<pre tabindex="0"><code>&#34;Give me six hours to chop down a tree and I will spend the first four
 sharpening the axe&#34; - Abraham Lincoln
 </code></pre><p>I am still learning how exactly to use this medium to write. The lack of content for a while is not indicative of an absence of posts to publish, rather a “getting to know one’s surrounds”.</p>
 ]]></content>
         </item>
-        
+
     </channel>
 </rss>
