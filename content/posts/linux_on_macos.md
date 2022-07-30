@@ -22,145 +22,7 @@ The software that makes all this possible on my M1 MBA is [Multipass](https://mu
 **Cons:**
 - Container technology is built to be ephemeral and is not typically a good use case for a full operating system
 
-# Installation
-
-Being able to use Multipass on MacOS is extremely simple and this section is a list of steps that I used.
-
-## Prerequisites
-
-If Homebrew is not currently installed on the laptop, then use the following script:
-
-```Bash
-
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-```
-
-Further instructions are available at [the Homebrew site](https://brew.sh) 
-
-## Multipass
-
-Multipass is installed as a [Cask](https://github.com/Homebrew/homebrew-cask)
-
-```Bash
-
-# brew -v install multipass
-
-
-==> Downloading https://github.com/canonical/multipass/releases/download/v1.10.1/multipass-1.10.1+mac-Darwin.pkg
-Already downloaded: /Users/shsingh/Library/Caches/Homebrew/downloads/521aecca03103c46d7d9cd32bc600c97ed07b4c78b94d67cfa4e08562d920976--multipass-1.10.1+mac-Darwin.pkg
-==> Verifying checksum for cask 'multipass'
-==> Installing Cask multipass
-cp -p /Users/shsingh/Library/Caches/Homebrew/downloads/521aecca03103c46d7d9cd32bc600c97ed07b4c78b94d67cfa4e08562d920976--multipass-1.10.1+mac-Darwin.pkg /opt/homebrew/Caskroom/multipass/1.10.1/multipass-1.10.1+mac-Darwin.pkg
-==> Running installer for multipass; your password may be necessary.
-Package installers may write to any location; options such as `--appdir` are ignored.
-installer: Package name is multipass
-installer: Installing at base path /
-installer:PHASE:Preparing for installation…
-installer:PHASE:Preparing the disk…
-installer:PHASE:Preparing multipass…
-installer:PHASE:Waiting for other installations to complete…
-installer:PHASE:Configuring the installation…
-installer:STATUS:
-installer:%7.797427
-installer:PHASE:Writing files…
-installer:%13.491799
-installer:PHASE:Writing files…
-installer:%20.609764
-installer:PHASE:Writing files…
-installer:%27.727730
-installer:PHASE:Writing files…
-installer:%36.269288
-installer:PHASE:Writing files…
-installer:%41.963660
-installer:PHASE:Writing files…
-installer:%53.352404
-installer:PHASE:Writing files…
-installer:%91.903978
-installer:PHASE:Registering updated components…
-installer:%92.615220
-installer:PHASE:Registering updated components…
-installer:%93.327476
-installer:PHASE:Registering updated components…
-installer:%94.038851
-installer:PHASE:Registering updated components…
-installer:%94.751139
-installer:PHASE:Registering updated components…
-installer:PHASE:Validating packages…
-installer:%97.750000
-installer:STATUS:Running installer actions…
-installer:STATUS:
-installer:PHASE:Finishing the Installation…
-installer:STATUS:
-installer:%100.000000
-installer:PHASE:The software was successfully installed.
-installer: The install was successful.
-🍺  multipass was successfully installed!
-
-
-```
-
-## Docker
-
-There is already a prebuilt alias for 'docker' in Multipass, which will launch a new Linux VM.
-
-```Bash
-
-# multipass launch docker
-Launched: docker
-
-# multipass list
-Name                    State             IPv4             Image
-docker                  Running           10.211.56.4      Ubuntu 22.04 LTS
-                                          172.17.0.1
-
-```
-
-Once Docker is installed you will need an alias for the 'docker' command.
-
-```Bash
-
-# multipass alias docker:docker
-
-# which -a docker
-/Users/shsingh/Library/Application Support/multipass/bin/docker
-/Users/shsingh/Library/Application Support/multipass/bin/docker
-
-# docker ps
-CONTAINER ID   IMAGE                    COMMAND        CREATED       STATUS       PORTS                                                           NAMES
-ba8229e8aa62   portainer/portainer-ce   "/portainer"   2 hours ago   Up 2 hours   8000/tcp, 9443/tcp, 0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   portainer
-
-```
-
-## Linux desktop as a container
-
-Once Docker is installed you have all the standard tooling available and you can then run any Linux operating system as a container.
-
-```Bash
-
-# docker run --tty --interactive shsingh/kali-linux-docker-arm64 /bin/zsh
-Unable to find image 'shsingh/kali-linux-docker-arm64:latest' locally
-latest: Pulling from shsingh/kali-linux-docker-arm64
-5282b35103b9: Pull complete
-1c931c2ad3fd: Pull complete
-6267781a4897: Pull complete
-acf0e86eb47b: Pull complete
-Digest: sha256:49b8798fa8d91514602669445e36b2173a793b6da55bf8914a717e3b5c750a04
-Status: Downloaded newer image for shsingh/kali-linux-docker-arm64:latest
-###
-Q:      Minnesotans ask, "Why aren't there more pharmacists from Alabama?"
-A:      Easy.  It's because they can't figure out how to get the little
-        bottles into the typewriter.
-###
-Linux 986e8b60c680 5.15.0-41-generic #44-Ubuntu SMP Thu Jun 23 11:20:13 UTC 2022 aarch64 GNU/Linux
- 10:30:47 up  2:06,  0 users,  load average: 3.25, 1.70, 0.68
-###
-
-/
-⬢ [Docker] ❯ uname -a
-Linux 986e8b60c680 5.15.0-41-generic #44-Ubuntu SMP Thu Jun 23 11:20:13 UTC 2022 aarch64 GNU/Linux
-
-```
+Details on setting up the environment are provided [further down below]({{< ref "#environment_setup">}}).
 
 # Workflow
 
@@ -191,6 +53,65 @@ latest: digest: sha256:98c2d327b74aa8652b6a76485f106068dfd97c02762b7da9341690b3c
 ```
 
 # Additional Thoughts
+
+## Quirks with the setup
+
+As of the writing of this post, I've been using this setup and workflow without any significant issues. It is likely not a scenario others may find appealing for running Linux on Apple laptops, but as I mention above this fits my needs fine.
+
+The only thing I've found to be an issue sometimes is terminal emulation quirks. My typical setup is to use [iTerm2](https://iterm2.com/index.html) with [tmux](https://github.com/tmux/tmux/wiki) and so attaching to the Docker container means I am using a console and not a login shell into Kali Linux. Software that has reliance on the terminal type (e.g. ncurses) can sometimes be a bit flaky. It doesn't cause me too much grief as I don't tend to use TUI based software too much.
+
+## Things to look into at some stage
+
+I'm quite enamored with Multipass and will look to using this for [MicroK8s](https://microk8s.io) at some stage. The [installation steps for MicroK8s](https://microk8s.io/docs/install-alternatives) suggest it natively uses Multipass so that makes things easier. The choice of MicroK8s over other micro Kubernetes alternatives such as k0s or k3s for development use is something [@codecowboy](https://codecowboy.io/) covers in a [series of posts](https://codecowboy.io/kubernetes/).
+
+I may look into mounting a local file system from MacOS for use in the Kali Linux container. At this stage there is not much I need from the local filesystem and the information inside the container is fairly transient. I am also a bit cautious with mounting MacOS into other operating systems as I am a very heavy user of metadata and tagging. I had previously found that files with all my MacOS tags all got removed when I mounted them into another operating system as they are MacOS specific.
+
+Example of the metadata included with a file on MacOS:
+
+```Bash
+
+#  mdls docker
+_kMDItemDisplayNameWithExtensions  = "docker"
+kMDItemContentCreationDate         = 2022-07-29 22:30:24 +0000
+kMDItemContentCreationDate_Ranking = 2022-07-29 00:00:00 +0000
+kMDItemContentModificationDate     = 2022-07-29 22:30:24 +0000
+kMDItemContentType                 = "public.unix-executable"
+kMDItemContentTypeTree             = (
+    "public.unix-executable",
+    "public.data",
+    "public.item",
+    "public.executable"
+)
+kMDItemDateAdded                   = 2022-07-29 22:30:24 +0000
+kMDItemDisplayName                 = "docker"
+kMDItemDocumentIdentifier          = 0
+kMDItemFSContentChangeDate         = 2022-07-29 22:30:24 +0000
+kMDItemFSCreationDate              = 2022-07-29 22:30:24 +0000
+kMDItemFSCreatorCode               = ""
+kMDItemFSFinderFlags               = 0
+kMDItemFSHasCustomIcon             = (null)
+kMDItemFSInvisible                 = 0
+kMDItemFSIsExtensionHidden         = 0
+kMDItemFSIsStationery              = (null)
+kMDItemFSLabel                     = 0
+kMDItemFSName                      = "docker"
+kMDItemFSNodeCount                 = (null)
+kMDItemFSOwnerGroupID              = 20
+kMDItemFSOwnerUserID               = 501
+kMDItemFSSize                      = 97
+kMDItemFSTypeCode                  = ""
+kMDItemInterestingDate_Ranking     = 2022-07-29 00:00:00 +0000
+kMDItemKind                        = "Unix Executable File"
+kMDItemLogicalSize                 = 97
+kMDItemPhysicalSize                = 4096
+kMDItemSupportFileType             = (
+    MDSystemFile
+)
+
+
+```
+
+I also haven't as yet played with creating cloud-init scripts to instantiate the Multipass images. I recently found an [extremely useful example](https://github.com/magnetikonline/macos-multipass-docker) that I may look into integrating into my setup.
 
 ## Kali Linux as desktop operation system
 
@@ -423,61 +344,144 @@ Do you want to continue? [Y/n]
 
 Installing all the tools takes under 10 mins on a reasonable Internet connection.
 
-## Quirks with the setup
 
-As of the writing of this post, I've been using this setup and workflow without any significant issues. It is likely not a scenario others may find appealing for running Linux on Apple laptops, but as I mention above this fits my needs fine. 
 
-The only thing I've found to be an issue sometimes is terminal emulation quirks. My typical setup is to use [iTerm2](https://iterm2.com/index.html) with [tmux](https://github.com/tmux/tmux/wiki) and so attaching to the Docker container means I am using a console and not a login shell into Kali Linux. Software that has reliance on the terminal type (e.g. ncurses) can sometimes be a bit flaky. It doesn't cause me too much grief as I don't tend to use TUI based software too much.
+# Environment Setup {#environment_setup}
 
-## Things to look into at some stage
+Being able to use Multipass on MacOS is extremely simple and this section is a list of steps that I used.
 
-I'm quite enamored with Multipass and will look to using this for [MicroK8s](https://microk8s.io) at some stage. The [installation steps for MicroK8s](https://microk8s.io/docs/install-alternatives) suggest it natively uses Multipass so that makes things easier. The choice of MicroK8s over other micro Kubernetes alternatives such as k0s or k3s for development use is something [@codecowboy](https://codecowboy.io/) covers in a [series of posts](https://codecowboy.io/kubernetes/).
+## Prerequisites
 
-I may look into mounting a local file system from MacOS for use in the Kali Linux container. At this stage there is not much I need from the local filesystem and the information inside the container is fairly transient. I am also a bit cautious with mounting MacOS into other operating systems as I am a very heavy user of metadata and tagging. I had previously found that files with all my MacOS tags all got removed when I mounted them into another operating system as they are MacOS specific.
-
-Example of the metadata included with a file on MacOS:
+If Homebrew is not currently installed on the laptop, then use the following script:
 
 ```Bash
 
-#  mdls docker
-_kMDItemDisplayNameWithExtensions  = "docker"
-kMDItemContentCreationDate         = 2022-07-29 22:30:24 +0000
-kMDItemContentCreationDate_Ranking = 2022-07-29 00:00:00 +0000
-kMDItemContentModificationDate     = 2022-07-29 22:30:24 +0000
-kMDItemContentType                 = "public.unix-executable"
-kMDItemContentTypeTree             = (
-    "public.unix-executable",
-    "public.data",
-    "public.item",
-    "public.executable"
-)
-kMDItemDateAdded                   = 2022-07-29 22:30:24 +0000
-kMDItemDisplayName                 = "docker"
-kMDItemDocumentIdentifier          = 0
-kMDItemFSContentChangeDate         = 2022-07-29 22:30:24 +0000
-kMDItemFSCreationDate              = 2022-07-29 22:30:24 +0000
-kMDItemFSCreatorCode               = ""
-kMDItemFSFinderFlags               = 0
-kMDItemFSHasCustomIcon             = (null)
-kMDItemFSInvisible                 = 0
-kMDItemFSIsExtensionHidden         = 0
-kMDItemFSIsStationery              = (null)
-kMDItemFSLabel                     = 0
-kMDItemFSName                      = "docker"
-kMDItemFSNodeCount                 = (null)
-kMDItemFSOwnerGroupID              = 20
-kMDItemFSOwnerUserID               = 501
-kMDItemFSSize                      = 97
-kMDItemFSTypeCode                  = ""
-kMDItemInterestingDate_Ranking     = 2022-07-29 00:00:00 +0000
-kMDItemKind                        = "Unix Executable File"
-kMDItemLogicalSize                 = 97
-kMDItemPhysicalSize                = 4096
-kMDItemSupportFileType             = (
-    MDSystemFile
-)
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+```
+
+Further instructions are available at [the Homebrew site](https://brew.sh)
+
+## Multipass
+
+Multipass is installed as a [Cask](https://github.com/Homebrew/homebrew-cask)
+
+```Bash
+
+# brew -v install multipass
+
+
+==> Downloading https://github.com/canonical/multipass/releases/download/v1.10.1/multipass-1.10.1+mac-Darwin.pkg
+Already downloaded: /Users/shsingh/Library/Caches/Homebrew/downloads/521aecca03103c46d7d9cd32bc600c97ed07b4c78b94d67cfa4e08562d920976--multipass-1.10.1+mac-Darwin.pkg
+==> Verifying checksum for cask 'multipass'
+==> Installing Cask multipass
+cp -p /Users/shsingh/Library/Caches/Homebrew/downloads/521aecca03103c46d7d9cd32bc600c97ed07b4c78b94d67cfa4e08562d920976--multipass-1.10.1+mac-Darwin.pkg /opt/homebrew/Caskroom/multipass/1.10.1/multipass-1.10.1+mac-Darwin.pkg
+==> Running installer for multipass; your password may be necessary.
+Package installers may write to any location; options such as `--appdir` are ignored.
+installer: Package name is multipass
+installer: Installing at base path /
+installer:PHASE:Preparing for installation…
+installer:PHASE:Preparing the disk…
+installer:PHASE:Preparing multipass…
+installer:PHASE:Waiting for other installations to complete…
+installer:PHASE:Configuring the installation…
+installer:STATUS:
+installer:%7.797427
+installer:PHASE:Writing files…
+installer:%13.491799
+installer:PHASE:Writing files…
+installer:%20.609764
+installer:PHASE:Writing files…
+installer:%27.727730
+installer:PHASE:Writing files…
+installer:%36.269288
+installer:PHASE:Writing files…
+installer:%41.963660
+installer:PHASE:Writing files…
+installer:%53.352404
+installer:PHASE:Writing files…
+installer:%91.903978
+installer:PHASE:Registering updated components…
+installer:%92.615220
+installer:PHASE:Registering updated components…
+installer:%93.327476
+installer:PHASE:Registering updated components…
+installer:%94.038851
+installer:PHASE:Registering updated components…
+installer:%94.751139
+installer:PHASE:Registering updated components…
+installer:PHASE:Validating packages…
+installer:%97.750000
+installer:STATUS:Running installer actions…
+installer:STATUS:
+installer:PHASE:Finishing the Installation…
+installer:STATUS:
+installer:%100.000000
+installer:PHASE:The software was successfully installed.
+installer: The install was successful.
+🍺  multipass was successfully installed!
 
 
 ```
 
-I also haven't as yet played with creating cloud-init scripts to instantiate the Multipass images. I recently found an [extremely useful example](https://github.com/magnetikonline/macos-multipass-docker) that I may look into integrating into my setup.
+## Docker
+
+There is already a prebuilt alias for 'docker' in Multipass, which will launch a new Linux VM.
+
+```Bash
+
+# multipass launch docker
+Launched: docker
+
+# multipass list
+Name                    State             IPv4             Image
+docker                  Running           10.211.56.4      Ubuntu 22.04 LTS
+                                          172.17.0.1
+
+```
+
+Once Docker is installed you will need an alias for the 'docker' command.
+
+```Bash
+
+# multipass alias docker:docker
+
+# which -a docker
+/Users/shsingh/Library/Application Support/multipass/bin/docker
+/Users/shsingh/Library/Application Support/multipass/bin/docker
+
+# docker ps
+CONTAINER ID   IMAGE                    COMMAND        CREATED       STATUS       PORTS                                                           NAMES
+ba8229e8aa62   portainer/portainer-ce   "/portainer"   2 hours ago   Up 2 hours   8000/tcp, 9443/tcp, 0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   portainer
+
+```
+
+## Linux desktop as a container
+
+Once Docker is installed you have all the standard tooling available and you can then run any Linux operating system as a container.
+
+```Bash
+
+# docker run --tty --interactive shsingh/kali-linux-docker-arm64 /bin/zsh
+Unable to find image 'shsingh/kali-linux-docker-arm64:latest' locally
+latest: Pulling from shsingh/kali-linux-docker-arm64
+5282b35103b9: Pull complete
+1c931c2ad3fd: Pull complete
+6267781a4897: Pull complete
+acf0e86eb47b: Pull complete
+Digest: sha256:49b8798fa8d91514602669445e36b2173a793b6da55bf8914a717e3b5c750a04
+Status: Downloaded newer image for shsingh/kali-linux-docker-arm64:latest
+###
+Q:      Minnesotans ask, "Why aren't there more pharmacists from Alabama?"
+A:      Easy.  It's because they can't figure out how to get the little
+        bottles into the typewriter.
+###
+Linux 986e8b60c680 5.15.0-41-generic #44-Ubuntu SMP Thu Jun 23 11:20:13 UTC 2022 aarch64 GNU/Linux
+ 10:30:47 up  2:06,  0 users,  load average: 3.25, 1.70, 0.68
+###
+
+/
+⬢ [Docker] ❯ uname -a
+Linux 986e8b60c680 5.15.0-41-generic #44-Ubuntu SMP Thu Jun 23 11:20:13 UTC 2022 aarch64 GNU/Linux
+
+```
