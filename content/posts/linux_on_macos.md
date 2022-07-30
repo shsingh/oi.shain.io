@@ -7,11 +7,11 @@ draft: false
 
 I bought my first Apple laptop in 2005 as I was keen to leverage native UNIX programs on x86 hardware. Since that time there have a number of packaging managers that I have used ([Fink](https://www.finkproject.org), [Macports](https://www.macports.org)) to now settle on [Homebrew](https://brew.sh) for installing UNIX programs on my laptop.
 
-In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quote bloated. While storage is relatively cheap, I have also started trying to do more with less in terms of laptop hardware resources. 
+In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quite bloated. While storage these days is relatively cheap, I have also started trying to do more with less in terms of laptop hardware resources. 
 
 All of these things have brought me to a point where my primary laptop of choice is currently the Apple M1 Macbook Air (MBA). The form factor, size, weight mean it is perfect for travelling as well as working in the office.
 
-I recently made the choice to rely less on using Homebrew for installing software and start looking at whether I can just leverage a Linux VM instead. This led me to start looking into a Docker container that is a fully fledged Linux operating system. The initial issue with this is that you need a host Linux to run Docker in, which means using virtualisation software. In effect, you are using MacOS to first run a Linux VM using virtualisation technology and then run Docker inside that Linux VM.
+I recently made the decision to rely less on using Homebrew for installing software and start looking at whether I can just leverage a Linux VM instead. This led me to start looking into a Docker container that is a fully fledged Linux operating system. The initial issue with this is that you need a host Linux to run Docker in, which means using virtualisation software. In effect, you are using MacOS to first run a Linux VM using virtualisation technology and then run Docker inside that Linux VM.
 
 The software that makes all this possible on my M1 MBA is [Multipass](https://multipass.run)
 
