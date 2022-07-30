@@ -15,7 +15,7 @@
       
       <guid>https://oi.shain.io/thoughts/linux-on-macos/</guid>
       <description>I bought my first Apple laptop in 2005 as I was keen to leverage native UNIX programs on x86 hardware. Since that time there have a number of packaging managers that I have used (Fink, Macports) to now settle on Homebrew for installing UNIX programs on my laptop.
-In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quote bloated.</description>
+In recent years I have found that even with a package manager, software libraries and dependencies of non-native versions of Python and Ruby make installation of programs quite bloated.</description>
     </item>
     
     <item>
