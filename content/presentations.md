@@ -15,15 +15,11 @@ author: Shain Singh
   - slides: [OWASP Top 2021 - The New Risk Order](/files/Brighttalk%20Webinar%20-%20OWASP%20Top%202021%20-%20The%20New%20Risk%20Order%20[June%202022].pdf)
   - video: <https://www.brighttalk.com/webcast/17570/550335>
 
-<hr />
-
 **_April_**
 
 - BrightTALK Webinar:
   - slides: [Towards a Zero Trust Architecture](/files/Brighttalk%20Webinar%20-%20Towards%20a%20Zero%20Trust%20Architecture%20%5BApril%202022%5D.pdf)
   - video: <https://www.brighttalk.com/webcast/17570/540251>
-
-<hr />
 
 **_March_**
 
@@ -35,8 +31,6 @@ author: Shain Singh
 
 #### 2021 {#2021}
 
-<hr />
-
 **_November_**
 
 - Australian Information Security Association (AISA) - Australian Cyber Conference 2021:
@@ -46,15 +40,11 @@ author: Shain Singh
   - slides: [Leveraging Cloud-Native Operations to Build Edge-as-a-Service](/files/Brighttalk%20Webinar%20-%20%20Leveraging%20Cloud-Native%20Operations%20to%20Build%20Edge-as-a-Service%20[November%202021].pdf)
   - video: <https://www.brighttalk.com/webcast/17570/514257>
 
-<hr />
-
 **_October_**
 
 - BrightTALK Webinar:
   - slides: [Effective DevSecOps - How to Integrate Security into Pipelines](/files/Brighttalk%20Webinar%20-%20%20Effective%20DevSecOps%20-%20How%20to%20Integrate%20Security%20into%20Pipelines%20[October%202021].pdf)
   - video: <https://www.brighttalk.com/webcast/17570/520808>
-
-<hr />
 
 **_August_**
 
@@ -62,15 +52,11 @@ author: Shain Singh
   - slides: [Application Protection Report - Art of Securing Modern APIs](/files/Brighttalk%20Webinar%20-%20%20Application%20Protection%20Report%20-%20Art%20of%20Securing%20Modern%20APIs%20[August%202021].pdf)
   - video: <https://www.brighttalk.com/webcast/17570/511639>
 
-<hr />
-
 **_June_**
 
 - BrightTALK Webinar (with Forrester):
   - slides: [5G Opportunities and Challenges for Infrastructure Modernisation](/files/Brighttalk%20Webinar%20with%20Forrester%20-%205G%20Opportunities%20and%20Challenges%20for%20Infrastructure%20Modernisation%20[June%202021].pdf)
   - video: <https://www.brighttalk.com/webcast/17570/494864>
-
-<hr />
 
 **_May_**
 
@@ -80,8 +66,6 @@ author: Shain Singh
 - ISC<sup>2</sup> Webinar:
   - slides: [Tools and Techniques used in Automated Threats](/files/ISC2%20Webinar%20-%20Tools%20and%20Techniques%20used%20in%20Automated%20Threats%20[May%202021].pdf)
   - video: <https://www.brighttalk.com/webcast/14253/478777>
-
-<hr />
 
 **_January_**
 
@@ -93,23 +77,17 @@ author: Shain Singh
 
 #### 2020 {#2020}
 
-<hr />
-
 **_December_**
 
 - BrightTALK Summit:
   - slides: [A Practical Lesson in Cloud Controls from Breach Analysis](/files/Brighttalk%20Summit%20-%20A%20Practical%20Lesson%20in%20Cloud%20Controls%20from%20Breach%20Analysis%20[Dec%202020].pdf)
   - video: <https://www.brighttalk.com/webcast/17570/459606>
 
-<hr />
-
 **_July_**
 
 - BrightTALK Webinar:
   - slides: [5G: An Opportunity to Get Security Right](/files/Brighttalk%20Webinar%20-%205G:%20The%20Opportunity%20to%20Get%20Security%20Right%20[July%202020].pdf)
   - video: <https://www.brighttalk.com/webcast/17570/485063>
-
-<hr />
 
 **_June_**
 
