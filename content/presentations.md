@@ -12,7 +12,7 @@ author: Shain Singh
 **_June_**
 
 - BrightTALK Webinar:
-  - slides: [OWASP Top 2021 - The New Risk Order](/Brightalk%20Webinar%20-%20OWASP%20Top%202021%20-%20The%20New%20Risk%20Order%20[June%202022].pdf)
+  - slides: [OWASP Top 2021 - The New Risk Order](/files/Brighttalk%20Webinar%20-%20OWASP%20Top%202021%20-%20The%20New%20Risk%20Order%20[June%202022].pdf)
   - video: <https://www.brighttalk.com/webcast/17570/550335>
 
 <hr />
