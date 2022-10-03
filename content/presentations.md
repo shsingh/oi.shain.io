@@ -9,6 +9,11 @@ author: Shain Singh
 
 #### 2022 {#2022}
 
+**_September_**
+
+- Australian Network Operators Groups (AusNOG) - AusNOG 2022:
+  - slides: [SaaS-Based Operations - Distributed Infrastructure and POP Management](/files/AusNOG%202022%20-%20SaaS-Based%20Operations%20-%20Distributed%20Infrastructure%20and%20POP%20Management%20%5BSeptember%202022%5D.pdf)
+
 **_June_**
 
 - BrightTALK Webinar:
