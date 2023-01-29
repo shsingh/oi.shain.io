@@ -9,6 +9,12 @@ author: Shain Singh
 
 #### 2022 {#2022}
 
+**_October_**
+
+- BrightTALK Webinar:
+  - slides: [Cloud-Native Application Delivery and Operations](/files/Brighttalk%20Webinar%20-%20Cloud-Native%20Application%20Delivery%20and%20Operations%20%5BOctober%202022%5D.pdf)
+  - video: <https://www.brighttalk.com/webcast/17570/562207>
+
 **_September_**
 
 - Australian Network Operators Groups (AusNOG) - AusNOG 2022:
