@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/Users/shsingh/Dropbox/reference/.src/@blog/oi.shain.io",
+	"sourceRoot": "/Users/shsingh/oi.shain.io",
 	"sources": [
 		"themes/hello-friend-ng/assets/scss/main.scss",
 		"themes/hello-friend-ng/assets/scss/_normalize.scss",
