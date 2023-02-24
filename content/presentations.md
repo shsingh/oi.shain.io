@@ -7,6 +7,16 @@ author: Shain Singh
 
 <hr />
 
+#### 2023 {#2023}
+
+**_February_**
+
+- BrightTALK Webinar:
+  - slides: [Securing Container and Cloud Workloads](/files/Brighttalk%20Webinar%20-%20Securing%20Container%20and%20Cloud%20Workloads%20%5BFebruary%202023%5D.pdf)
+  - video: <https://www.brighttalk.com/webcast/17570/575604>
+
+<hr />
+
 #### 2022 {#2022}
 
 **_October_**
